@@ -85,49 +85,39 @@ def train(X, y, groups, weights=None):
         np.ravel(y_train)
         np.ravel(y_test)
 
-        if weights is not None:
-            weights_train = weights[train_index]
-            weights_test = weights[test_index]
+        weights_train = None if weights is None else weights[train_index]
+        weights_test = None if weights is None else weights[test_index]
 
         if all(output == 0 for output in y_train) or all(output == 0 for output in y_test):
             continue
 
         logreg = LogisticRegression(solver='liblinear')
 
-        clf = logreg.fit(X_train, y_train) if weights is None \
-            else logreg.fit(X_train, y_train, sample_weight=weights_train)
-
+        clf = logreg.fit(X_train, y_train, sample_weight=weights_train)
         bias.append(clf.intercept_[0])
         coefficients.append(clf.coef_[0])
 
         # log loss
-        loss.append(log_loss(y_test, clf.predict_proba(X_test))) if weights is None \
-            else loss.append(log_loss(y_test, clf.predict_proba(X_test), sample_weight=weights_test))
+        loss.append(log_loss(y_test, clf.predict_proba(X_test), sample_weight=weights_test))
 
         # accuracy
-        acc.append(clf.score(X_test, y_test)) if weights is None \
-            else acc.append(clf.score(X_test, y_test, sample_weight=weights_test))
+        acc.append(clf.score(X_test, y_test, sample_weight=weights_test))
 
         # precision, recall, f1 score
-        precision.append(precision_score(y_test, clf.predict(X_test))) if weights is None \
-            else precision.append(precision_score(y_test, clf.predict(X_test), sample_weight=weights_test))
-        recall.append(recall_score(y_test, clf.predict(X_test))) if weights is None \
-            else recall.append(recall_score(y_test, clf.predict(X_test), sample_weight=weights_test))
-        f1.append(f1_score(y_test, clf.predict(X_test))) if weights is None \
-            else f1.append(f1_score(y_test, clf.predict(X_test), sample_weight=weights_test))
+        precision.append(precision_score(y_test, clf.predict(X_test), sample_weight=weights_test))
+        recall.append(recall_score(y_test, clf.predict(X_test), sample_weight=weights_test))
+        f1.append(f1_score(y_test, clf.predict(X_test), sample_weight=weights_test))
 
         # baseline log loss
         perc = sum(y_test) / len(y_test)
         baseline_pred = [perc] * len(y_test)
-        baseline_loss.append(log_loss(y_test, baseline_pred)) if weights is None \
-            else baseline_loss.append(log_loss(y_test, baseline_pred, sample_weight=weights_test))
+        baseline_loss.append(log_loss(y_test, baseline_pred, sample_weight=weights_test))
 
         # zeroR accuracy
         prediction = stats.mode(y_test)[0]
         zeroR_pred = [prediction] * len(y_test)
-        equalness = [1 if x == y else 0 for x, y in zip(y_test, zeroR_pred)]
-        baseline_acc.append(np.average(equalness)) if weights is None \
-            else baseline_acc.append(np.average(equalness, weights=weights_test))
+        baseline_acc.append(np.average([1 if x == y else 0 for x, y in zip(y_test, zeroR_pred)],
+                                       weights=weights_test))
 
         # get p-values for the fitted model
         denom = (2.0 * (1.0 + np.cosh(clf.decision_function(X_train))))
