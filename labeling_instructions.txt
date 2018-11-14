@@ -1,0 +1,106 @@
+Diagnoses
+
+E: exact. "perfect" definition
+e.g. drop: to move or cause to move in a steep or falling way
+
+R: redundancy. repetition
+e.g. nurse: a person who is employed to assist a medical practitioner or to assist a medical practitioner
+
+S: self-reference. usually happens when the self-reference in the output has a different POS compared to that of the output, so the output is technically a correct one.
+e.g. copy: to make a copy of
+e.g. stamp: to mark with a stamp
+
+C: semantically close
+e.g. company: a person who sells goods
+
+P: wrong POS
+e.g. odd: to make a mystery or bewildering to
+
+U: under-defined
+e.g. pupil: a person who is a member of a school
+
+N: over-defined. too restricted
+e.g. hit: a small blow
+
+B: partially wrong
+e.g. stamp: a mark that is used to mark a record of people
+
+O: opposite
+e.g. interest: a feeling of intense dislike
+
+M: mixture of two or more meanings
+e.g. cobbler: a person who makes bread and baked in a sauce
+
+
+W: wrong
+e.g. minor: a minor person
+e.g. paint: to apply to
+
+An output can have multiple diagnoses except 'E' and 'W'.
+e.g.
+paint: made by applying paint to the surface of a surface
+The above output has two problems: self-reference and redundancy. The 'paint' in the output means a type of substance for drawing which is different from the meaning of the output. It has has redundancy issue.
+------------------------------------------------------------------------------------
+Labeling instructions
+
+Model outputs are shuffled and hidden from you.
+
+e.g.
+[word]	novel
+
+[outputs]
+[W][g]	a new or literary work
+[W][g]	a literary work
+[W][g]	a person who is a literary or artistic work
+[W][g]	a book or other literary work that is not a particular subject
+[W][g]	to put into a literary work
+[W][g]	a person who is not a new or literary work
+[W][g]	a person who is not new or published
+[W][g]	a person who is not a novel
+[W][g]	a person who is a literary work
+[W][g]	a literary work or other literary work
+
+[ground-truth][groups]
+[g]wordnet	a	pleasantly new or different
+[g]wordnet	a	original and of a kind not seen before
+[g]oxford	a	new or unusual in an interesting way
+[g]wordnet	n	an extended fictional work in prose
+[g]wordnet	n	usually in the form of a story
+[g]wordnet	n	a printed and bound book that is an extended work of fiction
+[g]oxford	n	a fictitious prose narrative of book length , typically representing character and action with some degree of realism
+
+Please put your diagnoses in the first bracket ([W]) before each output. Put a group number indicating the meaning the output is about in the second bracket ([g]), however, if you think the output is wrong, then don't bother putting a number.
+
+Use ',' to separate your diagnoses if you give multiple diagnoses to an output. Usually, an output only has one meaning, but if it is diagnosed with 'M', then use ',' to separate group numbers.
+e.g.
+[word]	plant
+[U,B,R][1]	a building or other building that is used to store a particular area
+e.g.
+[word]	cobbler
+[M][1,2]	a person who makes bread
+
+You don't need to group the ground-truth definitions, since that part is less subjective and I can do that alone. ([groups] is the number of definitions after grouping, I've already finished grouping and counting.)
+
+For the above example, this is my labeling:
+[word]	novel
+
+[outputs]
+[M][1,2]	a new or literary work
+[E][1]	a literary work
+[W][g]	a person who is a literary or artistic work
+[W][g]	a book or other literary work that is not a particular subject
+[W][g]	to put into a literary work
+[W][g]	a person who is not a new or literary work
+[W][g]	a person who is not new or published
+[W][g]	a person who is not a novel
+[W][g]	a person who is a literary work
+[R][1]	a literary work or other literary work
+
+[ground-truth][2]
+[1]wordnet	a	pleasantly new or different
+[1]wordnet	a	original and of a kind not seen before
+[1]oxford	a	new or unusual in an interesting way
+[2]wordnet	n	an extended fictional work in prose
+[2]wordnet	n	usually in the form of a story
+[2]wordnet	n	a printed and bound book that is an extended work of fiction
+[2]oxford	n	a fictitious prose narrative of book length , typically representing character and action with some degree of realism
