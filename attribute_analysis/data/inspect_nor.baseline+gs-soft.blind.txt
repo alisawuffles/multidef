@@ -4,7 +4,7 @@
 [B,R][1]	a period of time in which a person 's life is used to be used in a particular way
 [W][g]	of or relating to or occurring in the middle
 [W][g]	done with a lack of care or attention
-[W,R][g]	the time of a period of time
+[W][g]	the time of a period of time
 [W][g]	a person 's bed .
 [W][g]	to make a brief or preliminary sound
 [U][1]	( of a person ) occurring in a period of time
@@ -14,7 +14,7 @@
 [B][2]	to be a first or end
 [W][g]	a state of agitation or loss of consciousness
 [U][2]	at a time
-[W,R][g]	a period of time in which a person is not yet yet yet brought to the future
+[W][g]	a period of time in which a person is not yet yet yet brought to the future
 
 [ground-truth][5]
 [g]wordnet	a	being or occurring at an advanced period of time or after a usual or expected time
@@ -40,11 +40,11 @@
 [word]	tier
 
 [outputs]
-[W,R][g]	a person or thing that is a person or thing that is not a specified person
+[W][g]	a person or thing that is a person or thing that is not a specified person
 [W][g]	to be a higher rank or position
 [W][g]	to make a high - pitched sound
 [W][g]	a person who is a member of a group of people
-[W,R][g]	a small , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat
+[W][g]	a small , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat
 [W][g]	a person who is a member of a group of people
 [W][g]	to take a higher position in a particular position
 [W][g]	a small , narrow - grained horizontal - shaped structure with a flat top and a flat surface
@@ -98,10 +98,10 @@
 [word]	rest
 
 [outputs]
-[W,R][g]	the part of the body that is the part of the body
+[W][g]	the part of the body that is the part of the body
 [W][g]	the part of a person 's body that is not the first
 [W][g]	a person who is not a member of the united states
-[W,R][g]	a person who is not considered to be considered
+[W][g]	a person who is not considered to be considered
 [W][g]	to the most important extent
 [W][g]	to be in addition
 [W][g]	in the most part
@@ -137,7 +137,7 @@
 [W][g]	a person who is not important
 [W][g]	a period of time
 [W][g]	to be a period of time
-[W,R][g]	a short , narrow , narrow , narrow , narrow , narrow , narrow part of a ship or other animal .
+[W][g]	a short , narrow , narrow , narrow , narrow , narrow , narrow part of a ship or other animal .
 [W][g]	a person who is done with a specified kind
 [W][g]	in a way that is not
 [W][g]	to be in a specified way
@@ -174,7 +174,7 @@
 [outputs]
 [B][1]	a person who is employed to keep a medical care for medical treatment
 [W][g]	a person who is affected by a person 's own life
-[W,R][g]	a person who is a person who is engaged in a particular purpose
+[W][g]	a person who is a person who is engaged in a particular purpose
 [W][g]	having or showing a sense of care and concern for others
 [W][g]	a person who is a person who is a person or thing that is not a particular person or thing
 [W][g]	a person who is not able to be affected by a person or thing
@@ -183,7 +183,7 @@
 [W][g]	a person who is a person who is not a patient
 [W][g]	a person who is a patient or medical treatment
 [W][g]	a person who is a medical practitioner or student .
-[W,R][g]	a person who is a person who is a patient or medical practitioner .
+[W][g]	a person who is a person who is a patient or medical practitioner .
 [W][g]	a person who is a medical practitioner .
 [W][2]	having or showing a sense of care and care for the future
 
@@ -232,12 +232,12 @@
 [word]	hospital
 
 [outputs]
-[W,R][g]	a hospital who is hospital in medical treatment
+[W][g]	a hospital who is hospital in medical treatment
 [W][g]	relating to or denoting the condition of being hospital
-[W,R][g]	a hospital where medical treatment is hospital
+[W][g]	a hospital where medical treatment is hospital
 [W][g]	a medical practitioner or medical practitioner
 [W][g]	a person who is a hospital in the Roman Catholic Church .
-[W,R][g]	a room in which a room or building is kept in a hospital .
+[W][g]	a room in which a room or building is kept in a hospital .
 [W][g]	a hospital where a hospital is kept
 [R][1]	a medical institution for the study of a particular institution
 [W][g]	a room or building where people are kept and hospital .
@@ -254,11 +254,11 @@
 
 [outputs]
 [S][1]	to be a right to do something
-[W,R][g]	not affected by or characterized by or characterized by doubt
+[W][g]	not affected by or characterized by or characterized by doubt
 [W][1]	to be a right to
 [W][g]	the act of making something mentally
 [M][1,3]	a line of points that is used to indicate the right of something
-[W,R][g]	a person who is not a person who is not correct
+[W][g]	a person who is not a person who is not correct
 [W][g]	free from danger or injury
 [W][g]	a person who is not a right to do something
 [W][g]	in a way that is not able to be moved or understood
@@ -306,7 +306,7 @@
 [W][g]	to be a fair of
 [P][1]	to be the right to do something
 [W][g]	or relating to the fair of a person or animal
-[W,R][g]	a fair or fair or fair
+[W][g]	a fair or fair or fair
 [S,R][2]	a person who is fair and fair
 [W][g]	a person or thing that is fair
 [S,R][2]	a person who is fair and fair
@@ -371,7 +371,7 @@
 [E][4]	a document that is written in a court of law
 [W][g]	a person who is not written or printed
 [E][5]	to put into a file
-[W,R][g]	a document that is not a document
+[W][g]	a document that is not a document
 [W][g]	to be a file of
 [W][g]	to send a document to
 [E][6]	a file of file for a file
@@ -396,13 +396,13 @@
 [outputs]
 [W][g]	to be in a certain way
 [W][g]	to live in a particular place
-[W,R][g]	a person who is not a person who is not
-[W,R][g]	a small , narrow , narrow piece of metal , typically made of metal or plastic , used for making a sound , especially a sound , especially a sound
+[W][g]	a person who is not a person who is not
+[W][g]	a small , narrow , narrow piece of metal , typically made of metal or plastic , used for making a sound , especially a sound , especially a sound
 [O][1]	to be in a way that is not present
 [W][g]	to live in or as if in a tent
 [W][g]	a person or thing that is not able to be transmitted
 [W][g]	to make a continuous sound
-[W,R][g]	a musical instrument that is used to refer to a person or animal , especially a person or animal , especially a person or animal , especially a person or animal , especially a person or animal , especially a
+[W][g]	a musical instrument that is used to refer to a person or animal , especially a person or animal , especially a person or animal , especially a person or animal , especially a person or animal , especially a
 [W][g]	to live in
 [O][2]	a person who is not living
 [W][g]	a group of people or things that are not present in a particular place
@@ -436,14 +436,14 @@
 [O,S][1]	a loose coat of cloth or cotton or
 [W][g]	a coat of fine - fitting coat used for covering a coat
 [W][g]	to make a coat of
-[W,R][g]	a coat of paint used to cover a coat of paint
+[W][g]	a coat of paint used to cover a coat of paint
 [W][g]	a small coat of fabric used for hunting
-[W,R][g]	a coat of hair or skin that is worn by a coat of hair
-[W,R][g]	a small coat of fabric , typically worn by a coat of coat , worn by a coat of coat , worn by a coat of coat , worn by a coat of coat , worn by a coat of
+[W][g]	a coat of hair or skin that is worn by a coat of hair
+[W][g]	a small coat of fabric , typically worn by a coat of coat , worn by a coat of coat , worn by a coat of coat , worn by a coat of coat , worn by a coat of
 [W][g]	a loose - fitting coat of cotton fabric
 [W][g]	a coat of hair made from a coat of hair , typically a coat of hair , used for hunting .
 [W][g]	a coat of hair worn on the head
-[W,R][g]	a coat of hair or hair , especially a coat of hair , used to coat a coat of hair .
+[W][g]	a coat of hair or hair , especially a coat of hair , used to coat a coat of hair .
 [W][g]	a coat of hair used to cover a coat
 
 [ground-truth][5]
@@ -466,7 +466,7 @@
 [W][g]	a feeling of being about
 [W][g]	a thing that is not true
 [W][g]	a feeling of desire to do something
-[W,R][g]	a statement that is not true or true
+[W][g]	a statement that is not true or true
 [W][g]	a statement that is not true
 [W][g]	a line of wings that is used to indicate the meaning of a word or phrase
 [W][g]	to cause to be true
@@ -489,16 +489,16 @@
 [word]	hot
 
 [outputs]
-[W,R][g]	a hot liquid made from hot water and hot water
+[W][g]	a hot liquid made from hot water and hot water
 [W][g]	to become hot
 [W][g]	to cause to be hot
 [W][g]	a hot liquid made from the sun or other liquid
 [W][g]	to make hot
-[W,R][g]	a hot liquid made from the hot water of a hot liquid
-[W,R][g]	hot and hot
+[W][g]	a hot liquid made from the hot water of a hot liquid
+[W][g]	hot and hot
 [W][g]	a small hot liquid
-[W,R][g]	a hot liquid that is used to make a hot liquid
-[W,R][g]	a hot hot liquid made from heat or heat
+[W][g]	a hot liquid that is used to make a hot liquid
+[W][g]	a hot hot liquid made from heat or heat
 
 [ground-truth][7]
 [g]wordnet	a	used of physical heat
@@ -525,13 +525,13 @@
 [B][1]	a person who is involved in or engage in a competition
 [E][1]	a group of people who are not engaged in a particular activity
 [W][g]	a person who is a member of a group
-[W,R][g]	a large , narrow , narrow - fitting bar or band , typically a band , or a piece of metal , used for support for a particular purpose
+[W][g]	a large , narrow , narrow - fitting bar or band , typically a band , or a piece of metal , used for support for a particular purpose
 [W][g]	a room or building where people are held and sold
 [W][g]	a bar where people are sold
-[W,R][g]	a large , narrow , narrow - fitting structure , especially one that is a member of a group of people .
+[W][g]	a large , narrow , narrow - fitting structure , especially one that is a member of a group of people .
 [E][1]	a group of people who are engaged in a particular activity
 [W][g]	a building where people are sold
-[W,R][g]	a large , narrow , narrow , narrow piece of wood , typically a metal , or a piece of wood , typically with a single surface , used for holding or playing a particular activity , especially a particular
+[W][g]	a large , narrow , narrow , narrow piece of wood , typically a metal , or a piece of wood , typically with a single surface , used for holding or playing a particular activity , especially a particular
 
 [ground-truth][5]
 [g]wordnet	n	a formal association of people with similar interests
@@ -549,15 +549,15 @@
 
 [outputs]
 [U][1]	a game played with a ball , typically with a round ball , used for lifting and playing game .
-[W,R][g]	a large , round , round , round - flowered plant of the cabbage family , with a long - shaped stem and a long stem , native to the US and New Zealand .
+[W][g]	a large , round , round , round - flowered plant of the cabbage family , with a long - shaped stem and a long stem , native to the US and New Zealand .
 [W][g]	small fruit of the cabbage family
 [W][g]	to strike with or as if with a blow
 [U,R][1]	a game played with a ball with a ball
 [W][g]	a game played with a ball , typically with a curved blade and a round handle , used for playing game .
 [W][g]	to move in a specified way
 [P][1]	to make a game
-[W,R][g]	a large - handled game with a long - handled ball with a long handle and a long round blade , used for cooking and cooking .
-[W,R][g]	a large - handled grass with a flat blade and a flat blade , used for cooking and cooking .
+[W][g]	a large - handled game with a long - handled ball with a long handle and a long round blade , used for cooking and cooking .
+[W][g]	a large - handled grass with a flat blade and a flat blade , used for cooking and cooking .
 
 [ground-truth][7]
 [g]wordnet	n	any of numerous annual trailing plants of the genus <unk> grown for their fleshy edible fruits
@@ -582,7 +582,7 @@
 [E][1]	a person who is trained to assist a medical practitioner .
 [W][g]	a person who specializes in medical research
 [W][g]	a female woman
-[W,R][g]	a woman who is a woman who is a woman who is a woman who is a woman who is not a woman
+[W][g]	a woman who is a woman who is a woman who is a woman who is a woman who is not a woman
 [R][1]	a woman who is a woman 's job , especially one who is employed to keep the care of the diseases .
 [R][1]	a woman who is a woman who is a woman who is a woman who is a member of a hospital
 [E][1]	a person who is employed to assist medical care and in medical treatment .
@@ -641,7 +641,7 @@
 [E][1]	a group of people or things that are considered as a whole
 [W][g]	to make or become hard
 [W][g]	( of a person or animal ) having a large or high - pitched , narrow surface
-[W,R][g]	a person who is a person who is a member of a group
+[W][g]	a person who is a person who is a member of a group
 [N][1]	a small group of people or things
 [W][g]	a class of people who are considered as a class
 
@@ -671,7 +671,7 @@
 [W][g]	to make a hole or thrust into
 [U][3]	a person or thing that is held in a particular place
 [W][g]	to a very great extent
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [W][g]	to be in a specified way
 
 [ground-truth][16]
@@ -708,7 +708,7 @@
 [W][g]	to place in a place
 [S][1]	the act of putting something in a particular place
 [W][1]	a place or place where something is done
-[W,R][g]	a small piece of material , typically a small , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat ,
+[W][g]	a small piece of material , typically a small , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat , flat ,
 [W][g]	to be in a particular place
 [W][g]	a place where something is not a particular place
 [W][g]	to be a place
@@ -744,7 +744,7 @@
 [B][1]	a large aircraft with a flat top and a flat surface , used for flying a vehicle .
 [B][1]	a large aircraft that is designed to be propelled by a vehicle
 [B][1]	a large vehicle with a long - handled aircraft , used for carrying a vehicle or aircraft .
-[W,R][1]	a vehicle with a long tail and a long tail
+[W][1]	a vehicle with a long tail and a long tail
 [W][1]	a vehicle with a long - propelled aircraft
 [W][1]	a small aircraft with a flat blade and a flat blade , used for carrying a vehicle or aircraft .
 [U][2]	to travel in a vehicle
@@ -808,7 +808,7 @@
 [W][g]	a thing that is not a particular thing
 [W][g]	a thing that is a particular thing
 [W][g]	to make a problem or difficulty
-[W,R][g]	a situation that is a situation that is not a settlement
+[W][g]	a situation that is a situation that is not a settlement
 [W][g]	a situation that is not able to be understood
 [W][g]	a solution that is not a solution
 [W][g]	a solution of a solution that is used to achieve a particular purpose
@@ -931,12 +931,12 @@
 [outputs]
 [E][1]	to make a covering
 [O,P][2]	to be visible
-[W,R][g]	a person or thing that is a person or thing that is not visible or seen
+[W][g]	a person or thing that is a person or thing that is not visible or seen
 [W][g]	to cover with a cover
 [W][g]	a book or other material that is not a newspaper or magazine
 [W][g]	a person or thing that is a sum of money
 [W][g]	to make a sum of something
-[W,R][g]	a person who is a person who is not a person or thing
+[W][g]	a person who is a person who is not a person or thing
 [S][1]	to cover with a layer of material
 [W][g]	to cover with a cover
 [W][g]	to make a copy of
@@ -990,8 +990,8 @@
 [outputs]
 [R][1]	a line of lines or lines that is used to indicate a particular point of a particular thing
 [E][2]	to go in a way that is difficult to avoid
-[W,R][g]	to move in a narrow , narrow way
-[W,R][g]	a line of lines of a line
+[W][g]	to move in a narrow , narrow way
+[W][g]	a line of lines of a line
 [O][3]	a line of parallel lines
 [W][g]	a line of two or more people or things considered as a unit
 [W][g]	a long - handled embrace
@@ -1031,7 +1031,7 @@
 [W,P][g]	to make a mystery or bewildering to
 [W,P][g]	to make a certain number of things
 [W][g]	not having a particular quality or character
-[W,R][g]	not having a particular quality or quality
+[W][g]	not having a particular quality or quality
 [C][1]	lacking or showing unusual interest
 [W][g]	( of a person ) not having a particular purpose
 [W][g]	lacking interest or enthusiasm
@@ -1059,7 +1059,7 @@
 [W,P][g]	in a way that shows a sudden or intense desire to look
 [W][g]	to make a certain event
 [B][1]	to look at or be in a particular way
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [W][g]	a device for holding a ball or other device to prevent the flow of water
 
 [ground-truth][4]
@@ -1086,7 +1086,7 @@
 [W][g]	a person who is not seen or noticed
 [W][g]	to catch with a trap
 [W][g]	to move in a way that is not able to be moved or shot
-[W,R][g]	a person who is a person who is a person who is a game in a game .
+[W][g]	a person who is a person who is a person who is a game in a game .
 [U][1]	a game
 [W][g]	to move quickly and lightly
 [W][g]	to move quickly
@@ -1120,7 +1120,7 @@
 [W][g]	in a hard manner
 [B][3]	a person who is hard to do or achieve something
 [C][2]	a person who is not able to be moved
-[W,R][g]	a hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard
+[W][g]	a hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard , hard
 [W][g]	having or showing a strong and hard quality
 [W][g]	( of a person ) hard and hard to do something
 [W][g]	hard to deal with
@@ -1194,7 +1194,7 @@
 
 [outputs]
 [U][1]	the process of becoming a year
-[W,R][g]	to make a short , short , short - legged period of time
+[W][g]	to make a short , short , short - legged period of time
 [W][g]	the process of becoming new or more important
 [P,N][2]	the act of making a new or natural substance
 [R,U][1]	the period of time in which a period of time is year
@@ -1233,10 +1233,10 @@
 [W][g]	to walk with a long , narrow gait
 [W][g]	to walk in a leisurely way
 [W][g]	a person who is not walking
-[W,R][g]	to walk with a walk
-[W,R][g]	to walk with a walk
+[W][g]	to walk with a walk
+[W][g]	to walk with a walk
 [W][g]	to walk in a leisurely way
-[W,R][g]	a walk in which a person 's foot is moved to walk .
+[W][g]	a walk in which a person 's foot is moved to walk .
 
 [ground-truth][5]
 [g]wordnet	n	the act of traveling by foot
@@ -1270,7 +1270,7 @@
 [N][1]	a violent attack of people
 [R][2]	a violent state of violent behavior
 [U][1]	a crowd of people
-[W,R][g]	characterized by or characterized by violent excitement and excitement
+[W][g]	characterized by or characterized by violent excitement and excitement
 [W][g]	extremely violent
 
 [ground-truth][4]
@@ -1317,7 +1317,7 @@
 
 [outputs]
 [W][g]	to make a sharp sound
-[W,R][g]	a small , narrow , narrow , typically narrow - shaped object , typically one of a number of small or more small items .
+[W][g]	a small , narrow , narrow , typically narrow - shaped object , typically one of a number of small or more small items .
 [R][1]	a small or small amount of something
 [W][g]	to make a vague impression
 [E][1]	a small amount of something
@@ -1327,7 +1327,7 @@
 [W][g]	a small , flat , flat piece of wood , especially a small object , especially a small one .
 [W][g]	to be a short amount
 [W][g]	to a very short extent
-[W,R][g]	a small , sharp , sharp , or sharp sound
+[W][g]	a small , sharp , sharp , or sharp sound
 [W][g]	a person who is somewhat mischievous
 [W][g]	to be alert or anxious
 
@@ -1389,7 +1389,7 @@
 [W][g]	to move or cause to move in a sharp or violent way
 [W][g]	a shot or other object that is not a
 [E][1]	a sudden blow
-[W,R][g]	to move or move in a sharp , sharp , or uncontrolled way
+[W][g]	to move or move in a sharp , sharp , or uncontrolled way
 [N,R][1]	a short , sharp , sharp blow
 
 [ground-truth][7]
@@ -1422,7 +1422,7 @@
 [W][g]	a small , thin , thin , thin surface of wood or other material , typically made of wood or metal , used for making a mold .
 [B][1]	a small container for holding food
 [B][3]	a dirty or viscous substance
-[W,R][g]	a type of type of type that is a type of type of type that is a type of type of type .
+[W][g]	a type of type of type that is a type of type of type that is a type of type of type .
 
 [ground-truth][6]
 [g]wordnet	n	container into which liquid is poured to create a given shape when it hardens
@@ -1443,14 +1443,14 @@
 [word]	aid
 
 [outputs]
-[W,R][g]	a person who is a person who is not a member of a particular group
+[W][g]	a person who is a person who is not a member of a particular group
 [W][g]	a substance that is not used to make a particular amount of money
 [W][g]	the act of making a person or thing to do something
 [W][g]	a person who is not a member of the government
 [W][g]	a person who is not available for help
 [W][g]	a person who is difficult to do something
 [W][g]	a person who is difficult to do something
-[W,R][g]	a person who is a person who is not a person or thing
+[W][g]	a person who is a person who is not a person or thing
 [B][1]	a substance that is used to make a need to help
 [W][g]	to cause to be unable to do something
 [E][2]	the act of helping someone to do something
@@ -1483,7 +1483,7 @@
 [W][g]	a person who is not a minor person
 [W][g]	to make a minor
 [W][g]	a person who is not minor
-[W,R][g]	a minor or minor minor
+[W][g]	a minor or minor minor
 
 [ground-truth][10]
 [g]wordnet	a	of lesser importance or stature or rank
@@ -1510,14 +1510,14 @@
 [B,N][1]	a piece of wood or other material that is used to hold a ball or other ball
 [W][g]	to make a stick on
 [W][g]	to avoid or try to avoid fulfilling or answering
-[W,R][g]	a short , sharp , sharp , sharp - pointed stick , typically one that is used to hold a ball or other object .
+[W][g]	a short , sharp , sharp , sharp - pointed stick , typically one that is used to hold a ball or other object .
 [W][g]	to move in a certain way
 [W][g]	a long - handled stick with a handle or a handle
 [W][g]	to move with a sharp motion
 [W][g]	a long , narrow stick with a long blade , used for cutting or shaping a metal or other metal .
 [W][g]	a stick or rod for cutting or throwing something .
 [W][g]	to move in a specified way
-[W,R][g]	to make a sharp , sharp sound
+[W][g]	to make a sharp , sharp sound
 [W][g]	a long - handled stick used to hold a stick to hold a stick
 [W][g]	to avoid or try to avoid fulfilling or answering
 
@@ -1614,13 +1614,13 @@
 [W][g]	a statement that is necessary for a particular purpose
 [W][g]	a person who is a charge of a person or thing
 [W][g]	a person or thing that is involved in a particular purpose
-[W,R][g]	to be a charge in a charge
-[W,R][g]	a person or thing that is taken or is taken
+[W][g]	to be a charge in a charge
+[W][g]	a person or thing that is taken or is taken
 [W][g]	a piece of equipment that is used to make a charge of a specified amount
-[W,R][g]	a unit of money equal to a unit of money
+[W][g]	a unit of money equal to a unit of money
 [W][g]	a charge that is a sum of money
 [W][g]	a charge or charge that is used to be a person or thing
-[W,R][g]	a piece of equipment that is made to be made up of a person or thing
+[W][g]	a piece of equipment that is made to be made up of a person or thing
 [B][1]	a person who is guilty of a crime
 [S][2]	to give a charge to
 [W][g]	a set of people or things that are used to be carried on a particular place
@@ -1659,8 +1659,8 @@
 [S][2]	to mark with a stamp
 [W][g]	a person 's head
 [S][2]	to mark with a stamp
-[W,R][g]	a mark or stamp for a mark or stamp
-[W,R][g]	to put up or put into a particular position
+[W][g]	a mark or stamp for a mark or stamp
+[W][g]	to put up or put into a particular position
 [S][1]	a mark or stamp that is used to mark a record of people
 
 [ground-truth][8]
@@ -1933,10 +1933,10 @@
 [word]	draft
 
 [outputs]
-[W,R][g]	a person who is a person who is a member of a particular group
+[W][g]	a person who is a person who is a member of a particular group
 [W][g]	a large , narrow piece of paper , typically used for making a piece of paper .
 [W][g]	a formal official who is a person who is a particular official
-[W,R][g]	a person who is intended to be intended to do something
+[W][g]	a person who is intended to be intended to do something
 [W][g]	a piece of paper or other material that is used to make a particular or official document .
 [W][g]	a large , narrow , flat piece of wood , typically used for making a draft or other food .
 
@@ -2013,9 +2013,9 @@
 [W][g]	to be in a specified way
 [W][g]	a group of people or things that are considered to be a particular unit
 [W][g]	to be a range of
-[W,R][g]	the range of the range or scope of something
+[W][g]	the range of the range or scope of something
 [W][g]	to be a
-[W,R][g]	the range of a range of things
+[W][g]	the range of a range of things
 [W][g]	a set of people or things that are not suitable for a particular purpose
 [C][1]	the act of setting something in a particular place
 
@@ -2044,7 +2044,7 @@
 
 [outputs]
 [R,U][1]	a flat top , typically one of a flat , flat , flat , flat , flat , flat , flat , flat , flat , or flat surface .
-[W,R][g]	a table or table , typically one made of a table , typically with a flat top , used for holding a table or other table .
+[W][g]	a table or table , typically one made of a table , typically with a flat top , used for holding a table or other table .
 [W][g]	a small table with a flat top and a flat surface
 [W][g]	a table for holding food or other items .
 [W][g]	a small piece of wood or other material used to support a table or other piece of furniture .
@@ -2144,7 +2144,7 @@
 [C,R][2]	to make a deep , clear , clear sound
 [W][g]	to express emotions or feelings
 [C,R][2]	to make a strong , strong , or critical sound
-[W,R][g]	to express or express disapproval
+[W][g]	to express or express disapproval
 
 [ground-truth][8]
 [g]wordnet	a	not tacit or implied
@@ -2168,9 +2168,9 @@
 [word]	bank
 
 [outputs]
-[W,R][g]	a bank of bank or bank of a bank
-[W,R][g]	a bank of bank of bank in a bank .
-[W,R][g]	a bank of bank of money , especially a bank .
+[W][g]	a bank of bank or bank of a bank
+[W][g]	a bank of bank of bank in a bank .
+[W][g]	a bank of bank of money , especially a bank .
 [W,,R][g]	a bank of bank or other bank of money in a bank .
 [W][g]	a person who makes goods
 [W][g]	a business that is a bank of money
@@ -2194,7 +2194,7 @@
 [word]	drive
 
 [outputs]
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [W][g]	a vehicle
 [W][g]	a person who is a vehicle with a long or narrow surface
 [W][g]	a vehicle or other vehicle
@@ -2206,7 +2206,7 @@
 [W][g]	a continuous series of events
 [W][g]	to take in search of
 [W][g]	to move in a certain way
-[W,R][g]	a vehicle or other vehicle that is driven by a vehicle or other vehicle .
+[W][g]	a vehicle or other vehicle that is driven by a vehicle or other vehicle .
 
 [ground-truth][10]
 [g]wordnet	n	the act of applying force to propel something
@@ -2233,7 +2233,7 @@
 [W][g]	a large area of land , especially a large , flat , flat - grained ground with a flat surface , used for carrying ground .
 [W][g]	a large area of land , especially a ground , or a ground .
 [W][g]	to move in a twisting or contorted motion
-[W,R][g]	a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy - grained rock with a long , narrow surface , typically having a long , narrow surface , typically having
+[W][g]	a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy - grained rock with a long , narrow surface , typically having a long , narrow surface , typically having
 [W][g]	the ground in a field or area of land
 [W][g]	a large , flat , flat surface of ground , especially one that is used to make a ground .
 [N][1]	a flat piece of wood , typically used for support for a building .
@@ -2272,10 +2272,10 @@
 [W][g]	a piece of paper , typically made of paper .
 [W][g]	a piece of paper that is used to make a paper or printed material
 [W][g]	a piece of paper , typically a paper , paper , or other material .
-[W,R][g]	a person who is not a person who is not a newspaper or magazine
+[W][g]	a person who is not a person who is not a newspaper or magazine
 [W][g]	a piece of paper
 [N][1]	a newspaper or magazine that is written or printed
-[W,R][g]	a paper paper
+[W][g]	a paper paper
 [R][2]	a written document that is written or printed
 
 [ground-truth][5]
@@ -2318,11 +2318,11 @@
 [word]	mint
 
 [outputs]
-[W,R][g]	a sweet , sweet name
+[W][g]	a sweet , sweet name
 [W][g]	a small coin of the mint , especially a coin , used in the use of a coin .
 [W][g]	a former coin of the mint .
 [W][g]	a small sweet - flavored fruit with a sweet flavor
-[W,R][g]	a small sweet fruit with a smooth , sweet , white , or white color .
+[W][g]	a small sweet fruit with a smooth , sweet , white , or white color .
 [W][g]	a small sweet - skinned mint .
 [W][g]	used to make a copy of something
 [W][g]	a small variety of dried fruit
@@ -2350,13 +2350,13 @@
 [W][g]	a person who is not a person 's face
 [W][g]	a game in which players try to score a ball on the ball .
 [W][g]	to make hard or easier to do or understand
-[W,R][g]	to make a sharp , sharp , sharp , sharp sound
+[W][g]	to make a sharp , sharp , sharp , sharp sound
 [W][g]	to make a defensive ball
-[W,R][g]	a piece of wood or other material that is used to hold a ball or other ball .
+[W][g]	a piece of wood or other material that is used to hold a ball or other ball .
 [W][g]	to make a hole on
 [W][g]	to make a problem
 [W][g]	to take back
-[W,R][g]	to make a sharp , sharp - pitched sound
+[W][g]	to make a sharp , sharp - pitched sound
 [W][g]	to make or become ineffective
 
 [ground-truth][5]
@@ -2417,11 +2417,11 @@
 [W][g]	a ship 's crew .
 [W][g]	a large and efficient organization
 [W][g]	a large amount of money
-[W,R][g]	a vehicle that is propelled by a vehicle
-[W,R][g]	a ship who is propelled by a ship
+[W][g]	a vehicle that is propelled by a vehicle
+[W][g]	a ship who is propelled by a ship
 [W][g]	the crew of a ship or aircraft .
 [W][g]	a large - wheeled vehicle with a long - pointed blade and a long blade , used for carrying a ship or aircraft .
-[W,R][g]	a large , heavy , heavy , heavy - bodied vehicle with a long blade and a long blade , used for carrying a ship or aircraft .
+[W][g]	a large , heavy , heavy , heavy - bodied vehicle with a long blade and a long blade , used for carrying a ship or aircraft .
 [W][g]	a large - bodied ship with a long - handled bill and a long tail .
 [W][g]	a large ship with a long - fitting mast and a long - fitting ship .
 [W][g]	a vehicle that is designed to carry a ship or aircraft
@@ -2451,13 +2451,13 @@
 [W][g]	a person who is harsh
 [W][g]	a small , hard , bark , typically black , or black , typically with a black or black coat .
 [W][g]	the act of making a bark
-[W,R][g]	a small , heavy , heavy - coated dog of the family , with a long , long , narrow head and a long head , used for making a dog .
-[W,R][g]	a small dog of a breed with long pointed teeth and a long pointed tail .
+[W][g]	a small , heavy , heavy - coated dog of the family , with a long , long , narrow head and a long head , used for making a dog .
+[W][g]	a small dog of a breed with long pointed teeth and a long pointed tail .
 [E][1]	to make a harsh or grating sound
 [R][1]	to make a harsh , harsh , or harsh sound
 [W][g]	a small bark .
 [E][1]	to make a loud , harsh sound
-[W,R][g]	a small , soft , soft , soft , soft , soft , soft bark made from a tree or plant .
+[W][g]	a small , soft , soft , soft , soft , soft , soft bark made from a tree or plant .
 
 [ground-truth][5]
 [g]wordnet	n	tough protective covering of the woody stems and roots of trees and other woody plants
@@ -2476,15 +2476,15 @@
 [word]	column
 
 [outputs]
-[W,R][g]	a short - printed book or magazine that is used to refer to a newspaper or magazine or newspaper , especially a newspaper or magazine , typically in a newspaper or magazine .
-[W,R][g]	a book of a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a short - printed book or magazine that is used to refer to a newspaper or magazine or newspaper , especially a newspaper or magazine , typically in a newspaper or magazine .
+[W][g]	a book of a newspaper or magazine that is published in a newspaper or magazine
 [W][g]	to write in a newspaper or magazine
 [W][g]	a book or other publication that is published in a particular place
-[W,R][g]	a large , flat , flat - grained paper , typically a large , flat , flat - shaped piece of paper , typically used for writing .
+[W][g]	a large , flat , flat - grained paper , typically a large , flat , flat - shaped piece of paper , typically used for writing .
 [W][g]	a small piece of material used to cover a book or other material .
 [W][g]	a person who is a biography of others
-[W,R][g]	a newspaper or magazine that is published in a newspaper or magazine
-[W,R][g]	a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a newspaper or magazine that is published in a newspaper or magazine
 [W][g]	a short - legged essay or journal
 
 [ground-truth][3]
@@ -2502,7 +2502,7 @@
 [W][g]	a person who is not a firm or solemn person .
 [W][g]	to be in a way that is not open to a particular purpose
 [W][g]	a person 's body of a person 's body .
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [W][g]	a person 's face , especially one that is not a member of the same kind
 [W][g]	to be in a specified way
 [W][g]	to be morally
@@ -2564,15 +2564,15 @@
 [W][g]	to have a strong appearance
 [W][g]	a person who is a bear of a bear
 [W][g]	to be a member of
-[W,R][g]	to make a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , or unpleasant sound
+[W][g]	to make a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , or unpleasant sound
 [W][g]	to have or be used in a specified way
 [W][g]	to be a bear of
 [W][g]	a person who is a member of the clergy .
-[W,R][g]	a large , narrow , narrow - bodied mammal with a long head and a long head , typically a long head , and a long head , and a long head , typically having a long head and a
+[W][g]	a large , narrow , narrow - bodied mammal with a long head and a long head , typically a long head , and a long head , and a long head , typically having a long head and a
 [W][g]	a large - bodied bear of a large breed of bear , typically having a large head and a long tail .
 [W][g]	a large - haired feline of the leopard
-[W,R][g]	a large - haired mammal of the forests of Asia , typically having a large head and a long head , native to the forests of Asia and North America .
-[W,R][g]	a large , heavy - bodied mammal with a long head and a long tail , typically having a long head and a long tail .
+[W][g]	a large - haired mammal of the forests of Asia , typically having a large head and a long head , native to the forests of Asia and North America .
+[W][g]	a large , heavy - bodied mammal with a long head and a long tail , typically having a long head and a long tail .
 [W][g]	to make a pig of
 [W][g]	to be a pig of
 [W][g]	to have a strong or tawny coat with a tawny coat
@@ -2601,8 +2601,8 @@
 [W][g]	to put into a particular place
 [W][g]	to make formal
 [W][g]	to make a formal or acceptable opinion
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
-[W,R][g]	a person who is a person who is not a court of law
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	a person who is a person who is not a court of law
 [W][g]	to make more attractive
 [W][g]	a person 's body , especially one that is a person 's job , especially in a particular way .
 [W][g]	to make a suit of
@@ -2652,9 +2652,9 @@
 
 [outputs]
 [S][1]	to make a check
-[W,R][g]	a person or thing that is a person or thing that is a specified thing
+[W][g]	a person or thing that is a person or thing that is a specified thing
 [W][g]	a person who is a check in a particular place
-[W,R][g]	a person 's job or position , especially one that is a person 's job or care .
+[W][g]	a person 's job or position , especially one that is a person 's job or care .
 [W][g]	a person who is employed to do something
 [W][g]	a person who is a check or payment of money
 [S][1]	to make a check
@@ -2691,20 +2691,20 @@
 [word]	tip
 
 [outputs]
-[W,R][g]	a person or thing that is a person or thing
+[W][g]	a person or thing that is a person or thing
 [W][g]	a small , sharp , sharp , sharp - pointed tip
 [W][g]	to make a sharp blow
 [C][1]	a small blow
-[W,R][g]	to make a sharp , sharp , sharp sound
+[W][g]	to make a sharp , sharp , sharp sound
 [W][g]	a small piece of wood or other material
-[W,R][g]	a sharp , sharp - pitched sound
-[W,R][g]	a person or thing that is a person or thing that is a specified thing
+[W][g]	a sharp , sharp - pitched sound
+[W][g]	a person or thing that is a person or thing that is a specified thing
 [W][g]	a person who is a brief point of something
-[W,R][g]	a quick , quick , quick - fitting remark
+[W][g]	a quick , quick , quick - fitting remark
 [W][g]	to make a sharp noise
 [W][g]	to search for
 [W][g]	a short , quick - fitting tip of a person 's head , especially one that is not a blow
-[W,R][g]	a small , sharp , sharp , sharp , sharp , sharp , sharp , sharp , sharp , sharp , or sharp point
+[W][g]	a small , sharp , sharp , sharp , sharp , sharp , sharp , sharp , sharp , sharp , or sharp point
 [C][1]	a small blow
 
 [ground-truth][12]
@@ -2731,7 +2731,7 @@
 
 [outputs]
 [W][g]	a play of playing music
-[W,R][g]	a person who is a person who is not a person who is not a specified person
+[W][g]	a person who is a person who is not a person who is not a specified person
 [W][g]	to be in a way that is not involved in
 [W][g]	to be in a particular way
 [E][1]	to be in a contest
@@ -2766,7 +2766,7 @@
 [W][g]	to move or cause to move in a certain direction
 [S][2]	to fasten with a lock
 [W][g]	to lock up or secure with a lock
-[W,R][g]	a lock of a lock or other object that is used to keep a lock of a building
+[W][g]	a lock of a lock or other object that is used to keep a lock of a building
 [W][g]	to lock a lock of
 [C][1]	to hold back
 [W][g]	to lock or fasten with a lock
@@ -2800,10 +2800,10 @@
 [B][2]	a device for firing a vehicle or other vehicle .
 [R,W][g]	a small metal metal , typically made of metal or metal , used for catching a vehicle .
 [W][g]	a small tube or bolt that is attached to a bolt or other device to prevent the air .
-[W,R][g]	a small metal device for holding a metal
+[W][g]	a small metal device for holding a metal
 [E][1]	to move in a sudden way
 [E][3]	to move or cause to move in a sudden or uncontrolled way
-[W,R][g]	a small metal tool with a long handle and a long handle
+[W][g]	a small metal tool with a long handle and a long handle
 [E][3]	to move in a sudden , sharp , or uncontrolled way
 [B][2]	a small metal or plastic , used for firing or holding a metal .
 [W][g]	a small rod or bolt
@@ -2834,11 +2834,11 @@
 [C][1]	the basic unit of money in China
 [W][g]	a person or thing that is very large or important
 [R,W][g]	a large - bodied American fish of the daisy family , with a long head and long legs and a long head , typically having a long head and a long head and a long head .
-[W,R][g]	a large , heavy , heavy , heavy - bodied fish of the genus family , with a large head and a long head , and a long head , and a long head , and a long head ,
-[W,R][g]	a large , heavy - bodied breed of large heavy - bodied breed with a large head and a long tail , typically having a long a
+[W][g]	a large , heavy , heavy , heavy - bodied fish of the genus family , with a large head and a long head , and a long head , and a long head , and a long head ,
+[W][g]	a large , heavy - bodied breed of large heavy - bodied breed with a large head and a long tail , typically having a long a
 [W][g]	to make a weight
 [W][g]	a small pound of a pound , equal to 100 pounds
-[W,R][g]	a large amount of food or other food
+[W][g]	a large amount of food or other food
 [W][g]	a person who is very large
 [B][2]	a unit of weight equal to 100 pounds
 [W][g]	a person who is a weight in a specified kind
@@ -2861,10 +2861,10 @@
 [outputs]
 [R,B][1]	a small , small , small , small , small , small , short - bodied mammal with a long head and a long head , typically having a long head and a long tail .
 [W][g]	a person who is employed to find something
-[W,R][g]	a small , small , small , small , small , small , small , small , small , small , small , small , small , typically small - bodied insect with a long tail , typically a long
+[W][g]	a small , small , small , small , small , small , small , small , small , small , small , small , small , typically small - bodied insect with a long tail , typically a long
 [W][g]	to move in a small or nervous manner
 [B,R,N][1]	a small nocturnal mammal with a long tail and a long tail , found in the central hemisphere and is used in the US and in the US .
-[W,R][g]	a small computer that is used to make a computer .
+[W][g]	a small computer that is used to make a computer .
 [M][2]	a small , short - tailed computer .
 [W][g]	a person who is not active or easy to do
 [B,R][1]	a small carnivorous mammal with a long tail and a long tail .
@@ -2888,8 +2888,8 @@
 
 [outputs]
 [W][g]	to rule in a certain way
-[W,R][g]	a rule or rule that is not established by law
-[W,R][g]	a rule of a rule
+[W][g]	a rule or rule that is not established by law
+[W][g]	a rule of a rule
 [W][g]	a rule that is not a rule
 [W][g]	a rule that is not a rule
 [W][g]	to make a rule
@@ -2946,11 +2946,11 @@
 
 [outputs]
 [W][g]	a book that is written for a book
-[W,R][g]	a book that is published in a book or other book
-[W,R][g]	a book of a book that is used to be published in a book or magazine
-[W,R][g]	a book or other book that is published in a book or other work
-[W,R][g]	a book or book that is published in a book or other book .
-[W,R][g]	a book that is written in a book or other book .
+[W][g]	a book that is published in a book or other book
+[W][g]	a book of a book that is used to be published in a book or magazine
+[W][g]	a book or other book that is published in a book or other work
+[W][g]	a book or book that is published in a book or other book .
+[W][g]	a book that is written in a book or other book .
 
 [ground-truth][6]
 [g]wordnet	n	a written work or composition that has been published printed on pages bound together
@@ -2978,7 +2978,7 @@
 [W][g]	to be a result of
 [P,W][g]	( of a person ) having a face
 [W][g]	a person who is not a member of the law
-[W,R][g]	to be a face or face
+[W][g]	to be a face or face
 [W][g]	to be a result of
 
 [ground-truth][5]
@@ -2997,11 +2997,11 @@
 
 [outputs]
 [W][g]	a large organ of organ or tissue , especially a part of the body .
-[W,R][g]	a person who is not involved in or involved in a particular activity
+[W][g]	a person who is not involved in or involved in a particular activity
 [W][g]	a person who is organ
-[W,R][g]	a musical instrument with a narrow tube and a long tube , typically with a single body , typically with a single body , typically with a single body , typically with a single body , typically with a single
-[W,R][g]	a large , large , large , large , large - bodied organ of the heart , typically a large , large , large - bodied organ of the male family , which is used in the use of a
-[W,R][g]	a organ of the body that is transmitted by the organ of organs and organs
+[W][g]	a musical instrument with a narrow tube and a long tube , typically with a single body , typically with a single body , typically with a single body , typically with a single body , typically with a single
+[W][g]	a large , large , large , large , large - bodied organ of the heart , typically a large , large , large - bodied organ of the male family , which is used in the use of a
+[W][g]	a organ of the body that is transmitted by the organ of organs and organs
 [C,R][1]	a musical instrument that is used to make a musical instrument
 [W,M][g]	a musical instrument that is a large part of the body of a body of the body , especially a male organ , especially a male person .
 [W][g]	a large organ of organs in the body of the body
@@ -3021,10 +3021,10 @@
 [word]	cold
 
 [outputs]
-[W,R][g]	a cold - smelling liquid that is used to make cold and cold
+[W][g]	a cold - smelling liquid that is used to make cold and cold
 [W][g]	a cold liquid
-[W,R][g]	( of a person ) cold and cold
-[W,R][g]	a cold - cold - cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water
+[W][g]	( of a person ) cold and cold
+[W][g]	a cold - cold - cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water cold - water
 [W][g]	to make cold
 [W][g]	a liquid that is used to make a cold - water liquid
 
@@ -3095,8 +3095,8 @@
 [C,P][2]	a low level of esteem or respect
 [C][2]	to walk with a low level of esteem
 [W][g]	to speak or write in a dishonorable manner
-[W,R][g]	to be a low level of level
-[W,R][g]	a low level of low level
+[W][g]	to be a low level of level
+[W][g]	a low level of low level
 [W][g]	to be a horizontal position
 [W][g]	to lie in a dishonorable manner
 [P][2]	( of a person ) having a low level of esteem
@@ -3151,12 +3151,12 @@
 [W][g]	to put into a document
 [W][g]	a book or document that is written or printed
 [W][g]	to write a book
-[W,R][g]	a book or document that is written to a book or other document
+[W][g]	a book or document that is written to a book or other document
 [W][g]	to write
 [S][1]	to make a copy of
-[W,R][g]	a document issued by a document
+[W][g]	a document issued by a document
 [W][g]	a document that is written or printed
-[W,R][g]	a book or other document containing a book or other document .
+[W][g]	a book or other document containing a book or other document .
 [W][g]	to put into a book or document
 [W][g]	to make written or printed
 
@@ -3205,14 +3205,14 @@
 
 [outputs]
 [W][g]	a person or thing that is represented as a whole
-[W,R][g]	a person who is a person who is not a count
+[W][g]	a person who is a person who is not a count
 [E][1]	to affirm in a certain way
 [W][g]	to be in charge of
 [W][g]	to be a count of
 [W][g]	to engage in a contest
 [E][2]	the act of counting
 [W][g]	a person who is not a person or thing
-[W,R][g]	a person who is considered to be considered to be true
+[W][g]	a person who is considered to be considered to be true
 [W][g]	a person who is a count
 [C][3]	to be a number of
 
@@ -3332,12 +3332,12 @@
 [outputs]
 [W][g]	to hang down with
 [W][g]	to hang out
-[W,R][g]	a short , short , short - pitched noise
+[W][g]	a short , short , short - pitched noise
 [C][1]	to make a rope on
 [W][g]	to hang down
 [W][g]	to hang on or around a surface
-[W,R][g]	a person who is not a person 's own activity
-[W,R][g]	a person who is not a person
+[W][g]	a person who is not a person 's own activity
+[W][g]	a person who is not a person
 [C][1]	to fasten with a rope
 [W][g]	to move in a relaxed way
 [W][g]	to move in a way that is not close to
@@ -3363,8 +3363,8 @@
 [word]	smart
 
 [outputs]
-[W,R][g]	having a quick and quick movement
-[W,R][g]	practical and practical
+[W][g]	having a quick and quick movement
+[W][g]	practical and practical
 [C,M][1]	having or showing great skill or refinement
 [C][1]	a person who is skilled in practical matters
 [W][g]	a person who is employed to do things
@@ -3404,9 +3404,9 @@
 [W][g]	to make a sharp sound
 [W][g]	to make a iron
 [W][g]	to move or cause to move in a twisting or contorted motion
-[W,R][g]	a large iron - shaped iron , typically a hard , hard , white , or white mineral which is a constituent of iron and other metals .
-[W,R][g]	a hard , hard , solid substance that is used to make a hard or iron .
-[W,R][g]	a small iron - shaped iron with a long blade and a long handle , used for making iron and other materials .
+[W][g]	a large iron - shaped iron , typically a hard , hard , white , or white mineral which is a constituent of iron and other metals .
+[W][g]	a hard , hard , solid substance that is used to make a hard or iron .
+[W][g]	a small iron - shaped iron with a long blade and a long handle , used for making iron and other materials .
 
 [ground-truth][6]
 [g]wordnet	a	extremely robust
@@ -3426,11 +3426,11 @@
 [word]	magazine
 
 [outputs]
-[W,R][g]	a newspaper or magazine that is published in a newspaper or magazine
-[W,R][g]	a newspaper or magazine that is published in a newspaper or magazine
-[W,R][g]	the book of a newspaper or magazine that is published in a newspaper or magazine
-[W,R][g]	a large , large , large , slender , typically large - legged mammal with a long head and a long head , typically having a long head and a long head and a long head , typically having a
-[W,R][g]	a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	the book of a newspaper or magazine that is published in a newspaper or magazine
+[W][g]	a large , large , large , slender , typically large - legged mammal with a long head and a long head , typically having a long head and a long head and a long head , typically having a
+[W][g]	a newspaper or magazine that is published in a newspaper or magazine
 
 [ground-truth][3]
 [g]wordnet	n	a periodic publication containing pictures and stories and articles of interest to those who purchase it or subscribe to it
@@ -3443,17 +3443,17 @@
 [word]	row
 
 [outputs]
-[W,R][g]	a large , flat , flat , flat , flat - sided piece of wood , typically one of a pair of three - sided rows , used for holding a piece of furniture , especially in a particular place
+[W][g]	a large , flat , flat , flat , flat - sided piece of wood , typically one of a pair of three - sided rows , used for holding a piece of furniture , especially in a particular place
 [W][g]	a piece of furniture that is attached to a building or other part of a building .
 [W][g]	to make a loud , screeching noise
 [C,R,P][1]	to make a long , narrow , flat , flat surface
 [W][g]	to be a game in which a person or thing is done
-[W,R][g]	a small , narrow , flat , flat piece of wood , especially one used for storage
+[W][g]	a small , narrow , flat , flat piece of wood , especially one used for storage
 [W][g]	to strike with a whip or rod
 [W][g]	to be in a specified way
 [W][g]	a small area of land , especially one that is raised to the ground
 [C,R][1]	a large , flat , flat - grained piece of wood , typically used for making a surface .
-[W,R][g]	a long , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , typically narrow - shaped stem , typically made of a single , flat , or
+[W][g]	a long , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , narrow , typically narrow - shaped stem , typically made of a single , flat , or
 [W][g]	a large , narrow - sided seat
 [W][g]	a piece of wood or other material that is used to make a specified number of people or things
 [W][g]	a person who is done with a long or narrow seat
@@ -3476,7 +3476,7 @@
 
 [outputs]
 [W][g]	to be a task
-[W,R][g]	to be a handle or handle
+[W][g]	to be a handle or handle
 [C][1]	to direct
 [C,R][2]	to carry out or carry out
 [W][g]	to make a handle
@@ -3549,7 +3549,7 @@
 [W][g]	the craft of a carpenter
 [W][g]	a piece of furniture used for making furniture and furniture
 [W][g]	a formal court of law
-[W,R][g]	a person who is a person who is a person who is not a person or thing
+[W][g]	a person who is a person who is a person who is not a person or thing
 
 [ground-truth][3]
 [g]wordnet	a	made according to the specifications of an individual
@@ -3570,9 +3570,9 @@
 [W][g]	a person who is not
 [W][g]	to be a person or thing
 [W][g]	to put into a certain place
-[W,R][g]	a person who is a person who is a person who is a person who is not in a particular way
+[W][g]	a person who is a person who is a person who is a person who is not in a particular way
 [W][g]	a person who is not authorized
-[W,R][g]	a person who is a person who is not a person or thing
+[W][g]	a person who is a person who is not a person or thing
 [W][g]	a person who is a unit of money
 [W][g]	a person who is legally authorized to do something
 [W][g]	a person or thing that is intended to do something
@@ -3604,7 +3604,7 @@
 [W][g]	to make a hole or groove in
 [U][1]	a small piece of land , especially one that is not a single unit of land .
 [C][2]	to make a stitches
-[W,R][g]	a piece of rock or concrete that is used to make a piece of rock
+[W][g]	a piece of rock or concrete that is used to make a piece of rock
 [W][g]	to make a single piece of material
 [W][g]	to come into a relationship
 [W][g]	a small river .
@@ -3655,7 +3655,7 @@
 [E][1]	a false or misleading statement
 [W][g]	to lie in ones own position
 [W][g]	to make a certain sound
-[W,R][g]	to be a lie in a lie
+[W][g]	to be a lie in a lie
 [P][1]	not having been true
 [W][g]	not having been discovered
 [O,P,U][1]	to be true
@@ -3718,7 +3718,7 @@
 [R,U][1]	a member of a team of a team that is a member of a team
 [W][g]	a man who is a member of the united states
 [U][1]	a person who is a member of a team
-[W,R][g]	a team of sports who is played by a team of sports
+[W][g]	a team of sports who is played by a team of sports
 [W],R[g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [C][1]	a person who is skilled in sports
 [U][1]	a person who is a team in sports .
@@ -3744,11 +3744,11 @@
 [W][g]	a set of pages of paper , typically made of paper or paper , used for writing or writing .
 [U][1]	a set of data that is kept in a computer or other program .
 [W][g]	to make a hole on
-[W,R][g]	to put a ship or a ship to a ship
-[W,R][g]	a person who is not a person 's job or activity
+[W][g]	to put a ship or a ship to a ship
+[W][g]	a person who is not a person 's job or activity
 [W][g]	to enter a ship or other vehicle
 [W][g]	to make a short , narrow line
-[W,R][g]	a set of information that is not a set of information
+[W][g]	a set of information that is not a set of information
 [W][g]	a person who is kept in a particular place
 [E][2]	to make a record of
 [W][g]	a piece of wood or other material used to make a flat surface .
@@ -3778,8 +3778,8 @@
 [R][1]	a small , heavy , heavy stick with a handle , used for hitting a ball or other ball .
 [S][2]	to hit with a bat
 [R][1]	a long , narrow , pointed stick , typically with a long , pointed blade , used for hitting a ball .
-[W,R][g]	a small , heavy , heavy - bodied songbird with a long head and a long head , typically with a long head and a long head , typically with a long head and a long head , typically with
-[W,R][g]	a small , slender - bodied insect with a long head and a long neck , typically a long - pointed head , and a long head , typically a long - pointed head , and a long head ,
+[W][g]	a small , heavy , heavy - bodied songbird with a long head and a long head , typically with a long head and a long head , typically with a long head and a long head , typically with
+[W][g]	a small , slender - bodied insect with a long head and a long neck , typically a long - pointed head , and a long head , typically a long - pointed head , and a long head ,
 [U,R][1]	a long - handled stick with a long handle and a handle
 [R,W][g]	a large , heavy , heavy - bodied insect with a long head and a long head , and a long head , and a long head , and a long head , typically having a long head and a
 [W][g]	a baseball bat
@@ -3802,12 +3802,12 @@
 [U][1]	a person who is employed to do something
 [W][g]	a person who has been moved
 [W][g]	a long - handled head of a horse
-[W,R][g]	the head of a horse 's head , typically with a long head and a long head , used for holding the head and head .
+[W][g]	the head of a horse 's head , typically with a long head and a long head , used for holding the head and head .
 [W][g]	a long - handled bow with a long head and a long head
-[W,R][g]	a person who is a person who is a head
-[W,R][g]	a person who is a head of a person 's head .
+[W][g]	a person who is a person who is a head
+[W][g]	a person who is a head of a person 's head .
 [W][g]	a piece of wood or metal that is used to cover a head
-[W,R][g]	a person who is a person who is a person who is a person who is not a senior person
+[W][g]	a person who is a person who is a person who is a person who is not a senior person
 [W][g]	a small head of a horse
 
 [ground-truth][16]
@@ -3840,18 +3840,18 @@
 [word]	jerk
 
 [outputs]
-[W,R][g]	a small , heavy , heavy - bodied fish of the northern hemisphere , with a long head and a long head and a long head , and a long head , and a long head .
+[W][g]	a small , heavy , heavy - bodied fish of the northern hemisphere , with a long head and a long head and a long head , and a long head , and a long head .
 [W][g]	a large - bodied fish of the northern hemisphere , typically having a broad head and a handle .
 [W,R,P][g]	characterized by or characterized by a strong and violent desire
 [E][1]	a person who is stupid or silly
 [R][1]	a person who is a stupid person .
 [E][1]	a stupid person .
 [W][g]	to make stupid or foolish
-[W,R][g]	a small , heavy - bodied pig with a long head and a handle , typically used for making a pig .
+[W][g]	a small , heavy - bodied pig with a long head and a handle , typically used for making a pig .
 [W][g]	a person who is not a member of a person 's body
 [W][g]	or showing a stupid or contemptible person
 [E][1]	a stupid person .
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is not a person who is not a person 's work
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is not a person who is not a person 's work
 
 [ground-truth][5]
 [g]wordnet	n	a dull stupid fatuous person
@@ -3910,9 +3910,9 @@
 [C][1]	a young bird
 [M,C][2]	a small opening in a vehicle or other animal .
 [W][g]	a small vehicle with a hinged head and a hinged tail
-[W,R][g]	a small vehicle with a long , pointed head , typically a long , pointed , typically hinged , shaped , shaped , or shaped like a door .
+[W][g]	a small vehicle with a long , pointed head , typically a long , pointed , typically hinged , shaped , shaped , or shaped like a door .
 [C][1]	a young bird
-[W,R][g]	a place in which a person 's body is kept to be kept
+[W][g]	a place in which a person 's body is kept to be kept
 
 [ground-truth][4]
 [g]wordnet	n	the production of young from an egg
@@ -3931,7 +3931,7 @@
 [word]	join
 
 [outputs]
-[W,R][g]	a member of a group of people who have a higher rank and rank .
+[W][g]	a member of a group of people who have a higher rank and rank .
 [E][1]	to be a member of
 [W][g]	in a way that is not open to a particular purpose
 [E][2]	to take in a position
@@ -3940,7 +3940,7 @@
 [W][g]	to make a single , more intense , lively , or enthusiastic
 [E][3]	a group of people or things that are involved in a particular activity
 [W][g]	to join with a military force
-[W,R][g]	to cause to be or cause to be a member of a group
+[W][g]	to cause to be or cause to be a member of a group
 [W][g]	to join into a group
 
 [ground-truth][2]
@@ -3997,10 +3997,10 @@
 [U][1]	a person who is very prominent
 [W][g]	a star .
 [W][g]	a person who is a star .
-[W,R][g]	a star that is a star or other star
+[W][g]	a star that is a star or other star
 [W][g]	someone who is star
-[W,R][g]	a star that is a star in which the star is used to make a star .
-[W,R][g]	a star - shaped star that is a star or a large body of a star , typically a star , or a similar substance .
+[W][g]	a star that is a star in which the star is used to make a star .
+[W][g]	a star - shaped star that is a star or a large body of a star , typically a star , or a similar substance .
 [U][1]	a person who is prominent in a particular place
 
 [ground-truth][6]
@@ -4021,7 +4021,7 @@
 [outputs]
 [W][g]	a short note of a letter or phrase
 [M][1]	( of a person ) having a high - pitched or vivid color
-[W,R][g]	a person who is not a person or thing
+[W][g]	a person who is not a person or thing
 [W][g]	to express gratitude
 [M][2]	a small piece of writing or other material
 [C][3]	to be a sign of
@@ -4032,7 +4032,7 @@
 [W][g]	a small piece of wood or other material used to express a high degree of interest
 [S][2]	a piece of writing that is used to indicate a note or phrase
 [W][g]	to express confidence in
-[W,R][g]	a short , short , short , short - grained note , typically a small , flat , flat , flat , flat , flat , flat , flat piece of wood , metal , or other material , used
+[W][g]	a short , short , short , short - grained note , typically a small , flat , flat , flat , flat , flat , flat , flat piece of wood , metal , or other material , used
 
 [ground-truth][7]
 [g]wordnet	n	a brief written record
@@ -4056,7 +4056,7 @@
 [W][g]	a small blow
 [W][g]	to make a blow
 [W][g]	to make a soft or wrinkled sound
-[W,R][g]	to make hard to make hard
+[W][g]	to make hard to make hard
 [B,R][1]	to move or move in a twisting or spinning way
 [B,R][1]	to move or cause to move in a twisting or contorted motion , especially in a twisting or spinning motion
 [S][1]	to make a shake
@@ -4121,8 +4121,8 @@
 [outputs]
 [W,P][g]	to be a job or position
 [W][g]	in accordance with what is accepted
-[W,R][g]	characterized by or characterized by a lack of energy
-[W,R][g]	a person who is not a person or thing that is not present or expected
+[W][g]	characterized by or characterized by a lack of energy
+[W][g]	a person who is not a person or thing that is not present or expected
 [W][g]	the property of being a former or subordinate amount
 [W][g]	a deficiency of diarrhea
 [W][g]	the state of being suitable for a particular purpose
@@ -4146,11 +4146,11 @@
 [E][1]	a small amount of something
 [W][g]	to move quickly
 [W][g]	a person who is not informal or slang
-[W,R][g]	to move or move in a sudden , abrupt , or abrupt way
+[W][g]	to move or move in a sudden , abrupt , or abrupt way
 [W][g]	to drop suddenly
 [W][g]	a small drop of a liquid
 [W][g]	to move quickly and lightly
-[W,R][g]	to make a sharp , sharp noise
+[W][g]	to make a sharp , sharp noise
 [W][g]	to drop in a sharp direction
 [E][2]	to lose strength or vigor
 
@@ -4181,7 +4181,7 @@
 
 [outputs]
 [W][g]	a small piece of wood or other material used to make a ball or other object .
-[W,R][g]	to fail to fail
+[W][g]	to fail to fail
 [W][g]	a person who is not a sudden or bad person
 [W][g]	the act of throwing out a ball
 [W][g]	a person who is not a person 's ball .
@@ -4352,7 +4352,7 @@
 [E][1]	a sudden attack
 [E][2]	an act of attacking
 [W][g]	to strike with a sudden sharp motion
-[W,R][g]	a person who is a person who has been thrown out of a particular place
+[W][g]	a person who is a person who has been thrown out of a particular place
 [E][1]	a sudden attack
 
 [ground-truth][17]
@@ -4386,7 +4386,7 @@
 [word]	hamper
 
 [outputs]
-[W,R][g]	a short , narrow , narrow strip of cloth , typically made of paper , used for fastening a garment or other object .
+[W][g]	a short , narrow , narrow strip of cloth , typically made of paper , used for fastening a garment or other object .
 [E][1]	to hinder or prevent the progress of
 [E][1]	to make a hindrance or obstacle
 [E][1]	to make a hindrance or obstacle to
@@ -4410,9 +4410,9 @@
 [W][g]	to be in a way that is not close or consistent
 [M][1]	to cut or fasten with a rope
 [W][g]	a small piece of cloth , typically a similar metal , used for fastening a ball or other object .
-[W,R][g]	a thing that is not made to be made
-[W,R][g]	a person who is not a close - fitting - fitting garment
-[W,R][g]	a piece of cloth or metal , typically made of metal or metal , used for fastening or holding something
+[W][g]	a thing that is not made to be made
+[W][g]	a person who is not a close - fitting - fitting garment
+[W][g]	a piece of cloth or metal , typically made of metal or metal , used for fastening or holding something
 [C][3]	a cord worn around the neck and worn by a cord or rope
 [W][g]	to engage in competition
 [W][g]	a thing that is not close or difficult to be made
@@ -4442,7 +4442,7 @@
 [E][1]	the period of time in which a year is divided
 [W][g]	a period of time in which a person or group is done
 [B][2]	a period of time in which a person or group is considered as a unit
-[W,R][g]	a period of time in which a person is done or done
+[W][g]	a period of time in which a person is done or done
 [B][2]	a period of time in which a person or thing is considered to be a particular event
 [W][g]	a group of people who are considered to be a member of a group
 [U,R][2]	a series of events that are taken to be taken in a particular place
@@ -4527,15 +4527,15 @@
 [word]	sound
 
 [outputs]
-[W,R][g]	or to a sound that is not used to emphasize the sound of a sound
+[W][g]	or to a sound that is not used to emphasize the sound of a sound
 [S,R][1]	to make a sound of sound
 [M][1,2]	not harsh or echo
 [W][g]	a sound that is not a loud sound
-[W,R][g]	a sound that is a sound of sound
-[W,R][g]	used to emphasize the sound of a sound
-[W,R][g]	a sound that is loud and loud
+[W][g]	a sound that is a sound of sound
+[W][g]	used to emphasize the sound of a sound
+[W][g]	a sound that is loud and loud
 [S][1]	to make a sound
-[W,R][g]	a person who is not a person who is not heard
+[W][g]	a person who is not a person who is not heard
 [S,B][1]	to make a sound of sounds
 [W][g]	not heard
 [W][g]	( of a sound ) having a sound that is heard
@@ -4575,7 +4575,7 @@
 [W][g]	a person who is employed to take property in a man
 [W][g]	a person who is employed to do something
 [W][g]	someone who is skilled in law
-[W,R][g]	a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is
+[W][g]	a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is a man who is
 
 [ground-truth][6]
 [g]wordnet	n	an adult person who is male as opposed to a woman
@@ -4627,7 +4627,7 @@
 [W][g]	to hold firmly
 [W][g]	to be in a specified way
 [B][1]	a short , narrow piece of metal , typically a metal or plastic , used for fastening a horse or other vehicle .
-[W,R][g]	to make a sudden , sudden , or uncontrolled noise
+[W][g]	to make a sudden , sudden , or uncontrolled noise
 [W][g]	to hold back
 [W][g]	to move or cause to move in a tight or twisted position
 [W][g]	to move in a certain way
@@ -4659,7 +4659,7 @@
 [W][g]	to be in a certain manner
 [S,P][1]	to be a long time
 [S,P][1]	to a long time
-[W,R][g]	a person who is very long and long
+[W][g]	a person who is very long and long
 [W][g]	to be in a long or slender way
 [W][g]	to move or cause to move in a certain way
 
@@ -4704,7 +4704,7 @@
 [W][g]	to hold together
 [U,R][2]	a person who is a person who is not a member of a particular organization
 [W][g]	a chair for holding a room
-[W,R][g]	a person who is a person who is a chair
+[W][g]	a person who is a person who is a chair
 
 [ground-truth][7]
 [g]wordnet	n	a seat for one person , with a support for the back
@@ -4734,7 +4734,7 @@
 [W][g]	a feeling of intense disapproval
 [W][g]	the act of expressing a strong disapproval
 [W][g]	to refrain from doing something
-[W,R][g]	a refrain of refrain
+[W][g]	a refrain of refrain
 
 [ground-truth][2]
 [g]wordnet	n	the part of a song where a soloist is joined by a group of singers
@@ -4780,15 +4780,15 @@
 [W][g]	to show a series of things
 [W][g]	to be a person or thing in a particular way
 [E][1]	a public event that is performed in a particular way
-[W,R][g]	( of a person ) make a short , flat , flat - grained piece of wood , typically with a flat surface , used for making a piece of paper , especially in a particular way .
-[W,R][g]	a person who is a person who is a person who is a person who is a person 's performance of a person or thing
-[W,R][g]	to make a short , short - pitched sound
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
+[W][g]	( of a person ) make a short , flat , flat - grained piece of wood , typically with a flat surface , used for making a piece of paper , especially in a particular way .
+[W][g]	a person who is a person who is a person who is a person who is a person 's performance of a person or thing
+[W][g]	to make a short , short - pitched sound
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is
 [E][2]	to make a display of
 [R][1]	to make a brief , dramatic , or dramatic display
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is not a public entertainment
+[W][g]	a person who is a person who is a person who is a person who is a person who is a person who is a person who is a person who is not a public entertainment
 [W][g]	to show a dramatic form
-[W,R][g]	a person who is a person who is a public performance
+[W][g]	a person who is a person who is a public performance
 [B][1]	a piece of music that is used to show a particular event
 [W][g]	to show the existence of
 [R][1]	a public event that is a particular event
@@ -4815,14 +4815,14 @@
 
 [outputs]
 [W][g]	a person who is not a person who is not a person who is not a specified person
-[W,R][g]	a short , narrow , narrow strip of wood or metal , used for breaking or breaking out a surface .
-[W,R][g]	a dance in which a dance is played by a dance
+[W][g]	a short , narrow , narrow strip of wood or metal , used for breaking or breaking out a surface .
+[W][g]	a dance in which a dance is played by a dance
 [W][g]	a musical instrument with a narrow rim , used for making a musical instrument .
 [W][g]	to make a crushing noise
 [W][g]	a person who is not a member of the same group
-[W,R][g]	a person who is a person who is a person who is a person who is a person who is not a person who is not a person who is not a person who is not a person who is
+[W][g]	a person who is a person who is a person who is a person who is a person who is not a person who is not a person who is not a person who is not a person who is
 [W][g]	to cause to be a break
-[W,R][g]	a musical instrument with a narrow handle and a narrow handle , used for making a guitar or other machine .
+[W][g]	a musical instrument with a narrow handle and a narrow handle , used for making a guitar or other machine .
 [W][g]	to move in a twisting or contorted motion
 [W][g]	to make a blow
 [W][g]	to make a short sound
@@ -4852,7 +4852,7 @@
 [S][5]	to make a channel
 [W][g]	a small channel
 [B][3]	a continuous line of waves
-[W,R][g]	a small channel or channel or device
+[W][g]	a small channel or channel or device
 [B][4]	a line of lines that is used to be transmitted by a particular area
 [W][g]	to make or become different
 [W][g]	a person or thing that carries something
@@ -4922,9 +4922,9 @@
 [W][g]	a sudden wave or movement of a wave or sound
 [S][2]	the act of moving in a wave
 [W][g]	a wave that is used to move in a wave
-[W,R][g]	a sudden , sudden , sudden movement
+[W][g]	a sudden , sudden , sudden movement
 [W][g]	a sudden wave
-[W,R][g]	a sudden , fast , fast - moving wave
+[W][g]	a sudden , fast , fast - moving wave
 [W][g]	to move with a sudden movement
 [E][1]	to move or cause to move in a circular manner
 [W][g]	to move or cause to move in a sudden or violent manner
@@ -4956,9 +4956,9 @@
 [C][1]	to be a hole or crack
 [W][g]	marked by or characterized by pain
 [E][1]	to make a hole or crack
-[W,R][g]	a person who is a person who is a person or thing that is a person or thing
+[W][g]	a person who is a person who is a person or thing that is a person or thing
 [W][g]	to be or become hard to be torn
-[W,R][g]	to make a sharp , sharp sound
+[W][g]	to make a sharp , sharp sound
 [W][g]	to cut into a surface
 [W][g]	to be in a grave or tomb
 [W][g]	to cut into a block
@@ -5062,7 +5062,7 @@
 [B][1]	a secret or illicit activity
 [S][4]	to make a ring of bells
 [W][g]	a ring of metal or other metal , typically worn as a decoration or for decoration .
-[W,R][g]	a ring of metal or other material used to make a ring or ring of metal or other material
+[W][g]	a ring of metal or other material used to make a ring or ring of metal or other material
 [S,B][2]	a precious stone consisting of a ring of metal , used for jewelry or decoration .
 [U][2]	a piece of jewelry or other material that is attached to the body
 [W][g]	a ring of metal or plastic used to make a ring of metal or plastic
@@ -5092,13 +5092,13 @@
 
 [outputs]
 [N][1]	to engage in business
-[W,R][g]	a company or organization that is a company of a company or organization
-[W,R][g]	a person who is a company or company of a company or company
+[W][g]	a company or organization that is a company of a company or organization
+[W][g]	a person who is a company or company of a company or company
 [W][g]	a business or company that provides a business to gain interest
-[W,R][g]	a company or organization that is responsible for the business of a business
+[W][g]	a company or organization that is responsible for the business of a business
 [W][g]	a person who is a company .
 [W][g]	a person or company that sells goods or services
-[W,R][g]	a company that is a company .
+[W][g]	a company that is a company .
 [U,B][2]	a person or organization that provides a particular purpose or organization
 [B][2]	a person who sells goods
 
@@ -5123,7 +5123,7 @@
 [R][1]	a person who is a medical practitioner or medical practitioner
 [W][g]	a person who is qualified to do or do something
 [E][1]	someone who specializes in medical treatment
-[W,R][g]	a person who is a person who is not a particular person or thing
+[W][g]	a person who is a person who is not a particular person or thing
 [E][1]	someone who is qualified to treat a medical practitioner
 
 [ground-truth][5]
@@ -5143,11 +5143,11 @@
 [word]	sentence
 
 [outputs]
-[W,R][g]	a sentence of sentence or sentence of a sentence or sentence of a sentence
-[W,R][g]	a sentence of sentence
+[W][g]	a sentence of sentence or sentence of a sentence or sentence of a sentence
+[W][g]	a sentence of sentence
 [W][g]	the state of being sentence
 [W][g]	a sentence of punishment that is guilty of a sentence
-[W,R][g]	a sentence of sentence in a sentence of sentence , especially a sentence of sentence , or a sentence of sentence , or a sentence of sentence .
+[W][g]	a sentence of sentence in a sentence of sentence , especially a sentence of sentence , or a sentence of sentence , or a sentence of sentence .
 [M][1]	the act of expelling a person from the mouth
 [B,S][1]	the act of convicted of a sentence
 
@@ -5183,7 +5183,7 @@
 
 [outputs]
 [W][g]	firm and unwavering
-[W,R][g]	a person who is a person or company that is a particular person or thing
+[W][g]	a person who is a person or company that is a particular person or thing
 [B][1]	a person who is concerned with a particular business or activity
 [R,B][1]	a person who is a business of business and business
 [B][1]	a business or organization that is the first to be in a particular place
@@ -5210,15 +5210,15 @@
 [word]	light
 
 [outputs]
-[W,R][g]	light and light
-[W,R][g]	a light - colored light
+[W][g]	light and light
+[W][g]	a light - colored light
 [E][1]	to make lighter or brighter
 [W][g]	or occurring in a light
 [E][1]	to make lighter or brighter
 [W][g]	( of a person ) having a light
-[W,R][g]	a light light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light -
+[W][g]	a light light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light - colored light -
 [S][1]	to make a light
-[W,R][g]	a light - light - colored light - colored light - shaped object that is used to make a light - light - colored light
+[W][g]	a light - light - colored light - colored light - shaped object that is used to make a light - light - colored light
 
 [ground-truth][15]
 [g]wordnet	a	of comparatively little physical weight or density
@@ -5267,7 +5267,7 @@
 [S][1]	the act of making a bill
 [W][g]	a person or thing that is a sum of money
 [O][2]	to pay up
-[W,R][g]	a formal or formal statement or statement
+[W][g]	a formal or formal statement or statement
 
 [ground-truth][10]
 [g]wordnet	n	a statute in draft before it becomes law
@@ -5291,18 +5291,18 @@
 [word]	chain
 
 [outputs]
-[W,R][g]	to move or cause to move in a chain or spiral
+[W][g]	to move or cause to move in a chain or spiral
 [W][g]	a chain of people or things that are not a particular group of people
-[W,R][g]	a large , large , large , large , large , large , large , large - bodied plant of the genus family , with a large head and long neck , typically a large , long - fitting head
-[W,R][g]	a chain of chain or chain , especially a chain of chain , chain , or other chain , typically a chain of chain , a chain of a chain of chain , a chain , or a chain of
-[W,R][g]	a chain of chain linked together
-[W,R][g]	a large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large
-[W,R][g]	a chain of chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain
-[W,R][g]	a chain of chain of people or things that are connected by a particular group
-[W,R][g]	a large , slender - bodied snake with a long head and a long neck , typically having a long a long - shaped head and a long neck , typically a long , narrow head , and a long
-[W,R][g]	a chain of chain that is used to sell or store goods
-[W,R][g]	a large , narrow , narrow chain , especially one that is used to provide a chain .
-[W,R][g]	a chain of chain and chain and chain chains of chain and chain items of a particular group
+[W][g]	a large , large , large , large , large , large , large , large - bodied plant of the genus family , with a large head and long neck , typically a large , long - fitting head
+[W][g]	a chain of chain or chain , especially a chain of chain , chain , or other chain , typically a chain of chain , a chain of a chain of chain , a chain , or a chain of
+[W][g]	a chain of chain linked together
+[W][g]	a large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large , large
+[W][g]	a chain of chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain and chain - chain
+[W][g]	a chain of chain of people or things that are connected by a particular group
+[W][g]	a large , slender - bodied snake with a long head and a long neck , typically having a long a long - shaped head and a long neck , typically a long , narrow head , and a long
+[W][g]	a chain of chain that is used to sell or store goods
+[W][g]	a large , narrow , narrow chain , especially one that is used to provide a chain .
+[W][g]	a chain of chain and chain and chain chains of chain and chain items of a particular group
 [W][g]	a store where people are sold
 [U,B][1]	a person or thing that sells something
 [W][g]	a person who is a chain of a particular group
@@ -5325,12 +5325,12 @@
 [P,O][1]	having or showing a desire to arouse or excite feelings
 [W][g]	to move or cause to move in a specified way
 [W][g]	a small stalk of a plant or animal
-[W,R][g]	to move or move in a twisting or sinuous way
+[W][g]	to move or move in a twisting or sinuous way
 [W][g]	to kill with a stalk
 [W][g]	to strike with a whip
 [W][g]	( of a plant ) having a stalk or stem .
 [W][g]	a small stalk of a plant that is used to make a stalk or other plant .
-[W,R][g]	to cut up or cut into a fork
+[W][g]	to cut up or cut into a fork
 
 [ground-truth][5]
 [g]wordnet	n	a slender or elongated structure that supports a plant or fungus or a plant part or plant organ
@@ -5461,10 +5461,10 @@
 [W][g]	a game in which a game is played with a match
 [W][g]	a match of two or more things , especially a match , or a match .
 [W][g]	a game in which the opponent is a score of a game
-[W,R][g]	a game in which the ball is made by a ball
+[W][g]	a game in which the ball is made by a ball
 [W][g]	a small piece of wood or other material used to make a game or match
 [E][3]	a contest
-[W,R][g]	a piece of cloth or other material that is made to be made to be made by a match
+[W][g]	a piece of cloth or other material that is made to be made to be made by a match
 [W][g]	a game in which two players are played with a match
 [R,W][g]	a game in which two players are used to score players
 
@@ -5497,8 +5497,8 @@
 [C][2]	a small room , especially one used for holding or storing things .
 [C,R][1]	a legislative body of a legislative body
 [R,W][g]	a room in which a room is kept
-[W,R][g]	a legislative body in which the head of a legislative body is attached to the body
-[W,R][g]	a room or room where people are kept
+[W][g]	a legislative body in which the head of a legislative body is attached to the body
+[W][g]	a room or room where people are kept
 
 [ground-truth][3]
 [g]wordnet	n	a piece of furniture resembling a cupboard with doors and shelves and drawers
@@ -5557,7 +5557,7 @@
 [outputs]
 [N][1]	a tall tower with a wooden frame
 [W][g]	a large - wheeled vehicle with a long curved bill and a long curved tail , used for carrying a large vehicle .
-[W,R][g]	a large , heavy , heavy , heavy platform , typically a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , and heavy - wheeled
+[W][g]	a large , heavy , heavy , heavy platform , typically a large , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , heavy , and heavy - wheeled
 [R][2]	a tall wading bird with a long bill and long legs , typically having a long head and long legs , typically a long - legged bill , and typically a long - legged bill , typically having
 [B][3]	to move with a vertical structure
 [B][2]	a large heavy - legged wading bird with a long - legged bill and long legs , typically having a long , slender bill and a long bill .

@@ -35,7 +35,7 @@ def get_data(parsed_data):
 
     # for each word
     for word in parsed_data:
-        es = parsed_data[word]                 # es = list of [labels]
+        es = parsed_data[word]                 # es = list of duple ([labels], definition)
         length = len(word)
         freq = word_freq.get_freq(word)
         num_ground = ground.get_ground(word)
@@ -43,7 +43,7 @@ def get_data(parsed_data):
         word_norm = word_emb.get_word_norm(word)
 
         # for each output definition
-        for output in es:               # output = tuple ([labels], output_def)
+        for output in es:               # output = duple ([labels], output_def)
             labels = output[0]          # labels = [labels]
             output_def = output[1]
             pos = partofspeech.get_pos(word, output_def)

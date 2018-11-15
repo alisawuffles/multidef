@@ -4,7 +4,7 @@ from collections import defaultdict
 def parse():
     '''
     read data from text file
-    :return: return word : list of tuples ([labels], definition) for each model
+    :return: return dictionary of word : list of tuples ([labels], definition) for each model
     '''
 
     code = get_code()
