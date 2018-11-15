@@ -146,12 +146,16 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
         coefficient = np.mean([row[i] for row in coefficients])
         p_value = np.mean([row[i] for row in p])
 
+        flag = ''
+        if p_value < 0.1:
+            flag = 'X'
+
         if i in [3, 7, 8, 9]:
-            print(attribute + '\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value))
+            print(attribute + '\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
         elif i in [6, 9]:
-            print(attribute + '\t\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value))
+            print(attribute + '\t\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
         else:
-            print(attribute + '\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value))
+            print(attribute + '\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
 
     print('---------------------------')
     print('log loss: ' + str(np.mean(loss)))

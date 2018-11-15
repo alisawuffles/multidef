@@ -5,6 +5,7 @@ import atom_weight, preprocessing, training, word_emb, diversity
 def show_examples(parsed_data):
     random_words = random.sample(parsed_data.keys(), 10)
     random_words.append('cabinet')
+    random_words.append('patient')
 
     for word in random_words:
         outputs = parsed_data[word]
