@@ -4,13 +4,12 @@ from sklearn.metrics import log_loss, f1_score, precision_score, recall_score
 from sklearn import preprocessing as preproc
 from sklearn.model_selection import KFold
 from scipy import stats
+import main
 
 good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
 label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close', 'wrong POS', 'under-defined',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
-attributes = ['word len', 'word freq', 'num defs', 'def div', 'word norm', 'atom wgt', 'adj', 'noun', 'adverb', 'verb']
-n = len(attributes)
-
+n = len(main.attributes)
 
 def train_alpha(data, groups, label):
     X = [row[0:n] for row in data]                  # X = m x n matrix containing attribute values
@@ -138,11 +137,11 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
                     recall, f1, baseline_loss, baseline_acc, p):
     print('\n')
     print('Label ' + label + ': ' + meaning)
-    print('Attribute\t\t\t' + 'Coefficient\t\t\t\t\t\t' + 'p-value')
+    print('Attribute\t\t\t' + 'Coefficient\t\t\t\t\t' + 'p-value')
     print('bias \t\t\t\t' + str(np.mean(bias)))
 
     for i in range(n):  # for every attribute
-        attribute = attributes[i]
+        attribute = main.attributes[i]
         coefficient = np.mean([row[i] for row in coefficients])
         p_value = np.mean([row[i] for row in p])
 
@@ -150,9 +149,9 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
         if p_value < 0.1:
             flag = 'X'
 
-        if i in [3, 7, 8, 9]:
+        if i in [3, 8, 9, 10]:
             print(attribute + '\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
-        elif i in [6, 9]:
+        elif i in [7]:
             print(attribute + '\t\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
         else:
             print(attribute + '\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)

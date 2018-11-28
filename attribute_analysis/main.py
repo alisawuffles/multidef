@@ -1,5 +1,7 @@
 import parse, preprocessing, training, analysis
 import warnings
+attributes = ['word len', 'word freq', 'num defs', 'def div', 'def length',
+              'word norm', 'atom wgt', 'adj', 'noun', 'adverb', 'verb']
 
 
 def main():
@@ -15,7 +17,7 @@ def main():
 
         training.train_s(s_data, groups)
 
-    # analysis.show_examples(gspr)
+    analysis.show_examples(gspr)
 
 
 if __name__ == "__main__":

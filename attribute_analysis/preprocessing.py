@@ -1,4 +1,4 @@
-import word_freq, ground, partofspeech, diversity, word_emb, atom_weight
+import word_freq, ground, partofspeech, diversity, word_emb, atom_weight, training
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 classes = {'I': 1.0, 'II': 0.6, 'III': 0.3, 'IV': 0.0}
@@ -20,7 +20,7 @@ def get_data(parsed_data):
 
     # create dictionaries
     word_freq.read_word_freq()
-    diversity.read_diversity()
+    diversity.read_definitions()
     ground.read_ground()
     word_emb.read_word_emb()
     atom_weight.read_atom_weight()
@@ -40,6 +40,7 @@ def get_data(parsed_data):
         freq = word_freq.get_freq(word)
         num_ground = ground.get_ground(word)
         div = diversity.get_diversity(word)
+        def_length = diversity.get_avg_def_length(word)
         word_norm = word_emb.get_word_norm(word)
 
         # for each output definition
@@ -61,29 +62,32 @@ def get_data(parsed_data):
             M = 1 if 'M' in labels else 0
             W = 1 if 'W' in labels else 0
 
-            W_data.append([length, freq, num_ground, div, word_norm, weight, pos, W])
+            W_data.append([length, freq, num_ground, div, def_length,
+                            word_norm, weight, pos, W])
             groups.append(word)
             s = score(labels)
             scores.append([s])
 
             if W == 0:
-                good_data.append([length, freq, num_ground, div, word_norm, weight, pos, E, R, S, C, P, U, N, B, O, M])
+                good_data.append([length, freq, num_ground, div, def_length,
+                                  word_norm, weight, pos, E, R, S, C, P, U, N, B, O, M])
                 good_groups.append(word)
 
-    W_data_pos = [row[6] for row in W_data]
+    n = training.n
+    W_data_pos = [row[n-4] for row in W_data]
     W_data_pos = np.ravel(W_data_pos).reshape(-1, 1)
     enc = OneHotEncoder(handle_unknown='error', dtype=np.int32)
     enc.fit(W_data_pos)
     W_transformed_pos = enc.transform(W_data_pos).toarray()
-    W_data = np.concatenate(([row[:6] for row in W_data], W_transformed_pos, [row[7:] for row in W_data]), axis=1)
-    s_data = np.concatenate(([row[:6] for row in W_data], W_transformed_pos, scores), axis=1)
+    W_data = np.concatenate(([row[:n-4] for row in W_data], W_transformed_pos, [row[n-3:] for row in W_data]), axis=1)
+    s_data = np.concatenate(([row[:n-4] for row in W_data], W_transformed_pos, scores), axis=1)
 
-    good_data_pos = [row[6] for row in good_data]
+    good_data_pos = [row[n-4] for row in good_data]
     good_data_pos = np.ravel(good_data_pos).reshape(-1, 1)
     enc = OneHotEncoder(handle_unknown='error', dtype=np.int32)
     enc.fit(good_data_pos)
     good_transformed_pos = enc.transform(good_data_pos).toarray()
-    good_data = np.concatenate(([row[:6] for row in good_data], good_transformed_pos, [row[7:] for row in good_data]),
+    good_data = np.concatenate(([row[:n-4] for row in good_data], good_transformed_pos, [row[n-3:] for row in good_data]),
                                axis=1)
 
     return W_data, s_data, groups, good_data, good_groups

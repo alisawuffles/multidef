@@ -1,4 +1,5 @@
 from collections import defaultdict
+import numpy as np
 
 function_words = ["a", "about", "above", "after", "after", "again", "against", "ago", "ahead", "all", "almost",
                   "almost", "along", "already", "also", "although", "always", "am", "among", "an", "and", "any",
@@ -20,34 +21,48 @@ function_words = ["a", "about", "above", "after", "after", "again", "against", "
 punct = [',', '.']
 
 
-def read_diversity():
-    global diversity_dict
-    global definitions_dict
+def read_definitions():
+    global definitions_dict                                     # dictionary of word : list of definitions
 
-    diversity_dict = defaultdict(int)
     definitions_dict = defaultdict(list)
     ground = False
     with open('data/inspect_ruimin.baseline+gs-soft.blind.txt', 'r') as ifp:
         for line in ifp:
             line = line.strip().split('\t')                     # list of strings separated by tab
             if len(line) == 2 and line[0] == '[word]':          # line looks like [word] word
-                if 'word' in locals():                          # if we are not reading the first word
-                    function_words.extend(punct)
-                    for y in function_words:                    # remove function words and punctuation
-                        if y in defs:
-                            defs[:] = [x for x in defs if x != y]
-                    diversity_dict[word] = len(set(defs))/len(defs)         # before moving on to next word, store value
-                word = line[-1]                                             # assign word
-                defs = []                                   # stores all words in ground-truth definitions
+                word = line[-1]                                 # assign word
                 continue
             if '[ground-truth]' in line[0]:
-                ground = True                               # start reading ground-truth definitions
+                ground = True                                   # start reading ground-truth definitions
                 continue
-            if ground == True and len(line) == 3:           # we are reading ground-truth definitions
+            if ground == True and len(line) == 3:               # line contains ground-truth definitions
                 definition = line[2].strip()
                 definitions_dict[word].append(definition)
-                defs.extend(definition.split(' '))
 
 
 def get_diversity(word):
-    return diversity_dict[word]
+    def_words = []  # words across all ground-truth definitions
+    definitions = definitions_dict[word]
+    for definition in definitions:
+        definition = definition.strip().split(' ')
+        def_words.extend(definition)
+
+    for y in function_words:  # remove function words and punctuation
+        if y in def_words:
+            def_words[:] = [x for x in def_words if x != y]
+    for y in punct:
+        if y in def_words:
+            def_words[:] = [x for x in def_words if x != y]
+
+    return len(set(def_words)) / len(def_words)
+
+
+def get_avg_def_length(word):
+    definitions = definitions_dict[word]
+    def_lengths = []
+
+    for definition in definitions:
+        definition = definition.strip().split(' ')
+        def_lengths.append(len(definition))
+
+    return np.mean(def_lengths)
