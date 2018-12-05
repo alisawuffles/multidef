@@ -4,7 +4,7 @@ from itertools import combinations, product
 from sklearn.metrics.pairwise import cosine_similarity
 import string, copy
 import gensim
-from sklearn.cluster import KMeans
+import heapq
 import ground
 model = gensim.models.KeyedVectors.load_word2vec_format('files/GoogleNews-vectors-negative300.bin', binary=True)
 
@@ -66,25 +66,14 @@ def get_diversity(word):
             continue
         def_emb.append(emb.tolist())
 
-    k = int(ground.get_ground(word))
-    kmeans = KMeans(n_clusters=k).fit(def_emb)
-
-    clusters = []
-    for i in range(k):
-        idx = np.where(kmeans.labels_ == i)[0].tolist()
-        clusters.append([def_emb[j] for j in idx])
-
     similarities = []
-    for pair in pairs(*clusters):
+    for pair in combinations(def_emb, 2):
         emb1 = pair[0]
         emb2 = pair[1]
-        if np.all(emb1 == 0) or np.all(emb2 == 0):
-            continue                                                    # skip calculating pairwise sim on that pair
-
         sim = cosine_similarity([emb1], Y=[emb2])[0][0]
         similarities.append(sim)
 
-    return np.mean(similarities)
+    return np.mean(heapq.nlargest(3, similarities))
 
 
 def get_def_embedding(definition):
@@ -134,9 +123,3 @@ def get_avg_def_length(word):
         def_lengths.append(len(definition))
 
     return np.mean(def_lengths)
-
-
-def pairs(*lists):
-    for t in combinations(lists, 2):
-        for pair in product(*t):
-            yield pair
