@@ -9,7 +9,8 @@ import main
 good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
 label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close', 'wrong POS', 'under-defined',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
-n = len(main.attributes)
+attributes = ['word freq', 'num defs', 'def div', 'word norm', 'atom wgt', 'adj', 'noun', 'adverb', 'verb']
+n = len(attributes)
 
 def train_alpha(data, groups, label):
     X = [row[0:n] for row in data]                  # X = m x n matrix containing attribute values
@@ -137,11 +138,12 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
                     recall, f1, baseline_loss, baseline_acc, p):
     print('\n')
     print('Label ' + label + ': ' + meaning)
-    print('Attribute\t\t\t' + 'Coefficient\t\t\t\t\t' + 'p-value')
-    print('bias \t\t\t\t' + str(np.mean(bias)))
+    format_string = "{:<30}{:<30}{:<30}{:<30}"
+    print(format_string.format('Attribute', 'Coefficient', 'p-value', 'p<0.1'))
+    print(format_string.format('bias', str(np.mean(bias)), '', ''))
 
     for i in range(n):  # for every attribute
-        attribute = main.attributes[i]
+        attribute = attributes[i]
         coefficient = np.mean([row[i] for row in coefficients])
         p_value = np.mean([row[i] for row in p])
 
@@ -149,12 +151,7 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
         if p_value < 0.1:
             flag = 'X'
 
-        if i in [3, 8, 9, 10]:
-            print(attribute + '\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
-        elif i in [7]:
-            print(attribute + '\t\t\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
-        else:
-            print(attribute + '\t\t\t' + str(coefficient) + '\t\t\t' + str(p_value) + '\t\t' + flag)
+        print(format_string.format(attribute, coefficient, p_value, flag))
 
     print('---------------------------')
     print('log loss: ' + str(np.mean(loss)))
