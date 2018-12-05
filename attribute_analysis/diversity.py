@@ -73,7 +73,7 @@ def get_diversity(word):
         sim = cosine_similarity([emb1], Y=[emb2])[0][0]
         similarities.append(sim)
 
-    return np.mean(heapq.nlargest(3, similarities))
+    return 1-np.mean(heapq.nsmallest(5, similarities))
 
 
 def get_def_embedding(definition):

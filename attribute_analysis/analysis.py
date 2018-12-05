@@ -48,17 +48,15 @@ def show_examples(parsed_data):
         word_norm = word_emb.get_word_norm(word)
         num_ground = ground.get_ground(word)
         div = diversity.get_diversity(word)
-        div_old = diversity.get_frac_uniq_words(word)
 
-        if div > 0.4 or div < 0.3:
-            display_results(parsed_data, word, word_norm, div, div_old, num_ground)
+        # if div > 0.4 or div < 0.3:
+        display_results(parsed_data, word, word_norm, div, num_ground)
 
 
-def display_results(parsed_data, word, word_norm, div, div_old, num_ground):
+def display_results(parsed_data, word, word_norm, div, num_ground):
     print('\nword: ' + word)
-    # print('\n\tword norm: ' + str(word_norm))
+    print('\n\tword norm: ' + str(word_norm))
     print('\tdef div: ' + str(div))
-    print('\told def div: ' + str(div_old))
     print('\tnum ground: ' + str(num_ground))
     print('\tground-truth definitions: ')
     definitions = diversity.definitions_dict[word]

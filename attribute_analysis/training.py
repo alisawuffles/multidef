@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import log_loss, f1_score, precision_score, recall_score
 from sklearn import preprocessing as preproc
 from sklearn.model_selection import KFold
-from sklearn.feature_selection import chi2
+from sklearn.feature_selection import chi2, f_classif, f_regression
 from scipy import stats
 
 good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
@@ -11,6 +11,7 @@ label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
 attributes = ['num defs', 'def div', 'word norm', 'atom wgt', 'adj', 'noun', 'adverb', 'verb']
 n = len(attributes)
+
 
 def train_alpha(data, groups, label):
     X = [row[0:n] for row in data]                  # X = m x n matrix containing attribute values
@@ -84,8 +85,16 @@ def train(X, y, groups, weights=None):
         for i in range(len(train_index)):
             pos_X[i] = [a - b if b < 0 else a for a, b in zip(X_train[i], X_min)]
 
-        scores, pvalues = chi2(pos_X, y[train_index])
-        p.append(pvalues)
+        if weights is None:
+            # classification
+            F, pval = f_classif([row[:n-4] for row in pos_X], y[train_index])           # p-values for continuous variables
+            scores, pvalues = chi2([row[n-4:] for row in pos_X], y[train_index])        # p-values for discrete variables
+
+            p.append(np.concatenate((pval, pvalues)))
+        else:
+            # regression
+            F, pval = f_regression(pos_X, [a*b for a,b in zip(y[train_index], weights[train_index])])
+            p.append(pval)
 
         X = preproc.scale(X)
         X_train, X_test = X[train_index], X[test_index]
