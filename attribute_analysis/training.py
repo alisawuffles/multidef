@@ -3,13 +3,12 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import log_loss, f1_score, precision_score, recall_score
 from sklearn import preprocessing as preproc
 from sklearn.model_selection import KFold
-from sklearn.feature_selection import chi2, f_classif, f_regression
 from scipy import stats
 
 good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
 label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close', 'wrong POS', 'under-defined',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
-attributes = ['num defs', 'def div', 'word norm', 'atom wgt', 'adj', 'noun', 'adverb', 'verb']
+attributes = ['num defs', 'def div', 'word norm', 'atom wgt']
 n = len(attributes)
 
 
@@ -59,6 +58,7 @@ def train_s(s_data, groups):
 
 
 def train(X, y, groups, weights=None):
+    X = preproc.scale(X)
     X = np.array(X)
     y = np.array(y)
     if weights is not None:
@@ -78,25 +78,6 @@ def train(X, y, groups, weights=None):
     p = []
 
     for train_index, test_index in kfold.split(X, y, groups):
-        # calculate p values
-        X_train = X[train_index]
-        X_min = np.min(X_train, axis=0).tolist()
-        pos_X = [[]] * len(train_index)
-        for i in range(len(train_index)):
-            pos_X[i] = [a - b if b < 0 else a for a, b in zip(X_train[i], X_min)]
-
-        if weights is None:
-            # classification
-            F, pval = f_classif([row[:n-4] for row in pos_X], y[train_index])           # p-values for continuous variables
-            scores, pvalues = chi2([row[n-4:] for row in pos_X], y[train_index])        # p-values for discrete variables
-
-            p.append(np.concatenate((pval, pvalues)))
-        else:
-            # regression
-            F, pval = f_regression(pos_X, [a*b for a,b in zip(y[train_index], weights[train_index])])
-            p.append(pval)
-
-        X = preproc.scale(X)
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
         np.ravel(y_train)
@@ -135,6 +116,18 @@ def train(X, y, groups, weights=None):
         zeroR_pred = [prediction] * len(y_test)
         baseline_acc.append(np.average([1 if x == y else 0 for x, y in zip(y_test, zeroR_pred)],
                                        weights=weights_test))
+
+        # get p-values for the fitted model
+        denom = (2.0 * (1.0 + np.cosh(clf.decision_function(X_train))))
+        F_ij = np.dot((X_train / denom[:, None]).T, X_train)  # Fisher Information Matrix
+        if np.linalg.det(F_ij) == 0:
+            continue
+        Cramer_Rao = np.linalg.inv(F_ij)  # Inverse Information Matrix
+        sigma_estimates = np.array(
+            [np.sqrt(Cramer_Rao[i, i]) for i in range(Cramer_Rao.shape[0])])  # sigma for each coefficient
+        z_scores = clf.coef_[0] / sigma_estimates  # z-score for each model coefficient
+        p_values = [stats.norm.sf(abs(x)) * 2 for x in z_scores]  # two tailed test for p-values
+        p.append(p_values)
 
     return bias, coefficients, loss, acc, precision, recall, f1, baseline_loss, baseline_acc, p
 
