@@ -64,7 +64,7 @@ def train(X, y, groups, weights=None):
     if weights is not None:
         weights = np.array(weights)
 
-    kfold = KFold(n_splits=5, shuffle=True)
+    kfold = KFold(n_splits=5, shuffle=False)
 
     bias = []
     coefficients = []
