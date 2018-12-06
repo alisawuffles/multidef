@@ -19,8 +19,8 @@ def get_data(parsed_data):
 
     # create dictionaries
     word_freq.read_word_freq()
-    diversity.read_definitions()
     ground.read_ground()
+    diversity.read_definitions()
     word_emb.read_word_emb()
     atom_weight.read_atom_weight()
     partofspeech.read_pos(parsed_data)
@@ -35,7 +35,6 @@ def get_data(parsed_data):
     # for each word
     for word in parsed_data:
         es = parsed_data[word]                 # es = list of duple ([labels], definition)
-        num_ground = ground.get_ground(word)
         div = diversity.get_diversity(word)
         word_norm = word_emb.get_word_norm(word)
 
@@ -57,13 +56,13 @@ def get_data(parsed_data):
             M = 1 if 'M' in labels else 0
             W = 1 if 'W' in labels else 0
 
-            W_data.append([num_ground, div, word_norm, weight, W])
+            W_data.append([div, word_norm, weight, W])
             groups.append(word)
             s = score(labels)
             scores.append([s])
 
             if W == 0:
-                good_data.append([num_ground, div, word_norm, weight, E, R, S, C, P, U, N, B, O, M])
+                good_data.append([div, word_norm, weight, E, R, S, C, P, U, N, B, O, M])
                 good_groups.append(word)
 
     n = training.n

@@ -1,4 +1,3 @@
-import random
 import atom_weight, preprocessing, training, word_emb, diversity, ground
 import numpy as np
 
@@ -49,21 +48,34 @@ def show_examples(parsed_data):
         num_ground = ground.get_ground(word)
         div = diversity.get_diversity(word)
 
-        # if div > 0.4 or div < 0.3:
-        display_results(parsed_data, word, word_norm, div, num_ground)
+        display_results(parsed_data, word, div, word_norm, num_ground)
 
 
-def display_results(parsed_data, word, word_norm, div, num_ground):
+def display_results(parsed_data, word, div, word_norm, num_ground):
+    outputs = parsed_data[word]
+    big_atom = 0
+    small_atom = 0
+    for output in outputs:
+        output_def = output[1]
+
+        weight = atom_weight.get_atom_weight(word, output_def)
+        if weight > 1.4:
+            big_atom = 1
+        elif weight < 0.6:
+            small_atom = 1
+
+    if big_atom == 0 or small_atom == 0:
+        return
+
     print('\nword: ' + word)
     print('\n\tword norm: ' + str(word_norm))
     print('\tdef div: ' + str(div))
     print('\tnum ground: ' + str(num_ground))
-    print('\tground-truth definitions: ')
-    definitions = diversity.definitions_dict[word]
-    for definition in definitions:
-        print('\t\t' + definition)
+    # print('\tground-truth definitions: ')
+    # definitions = diversity.definitions_dict[word]
+    # for definition in definitions:
+    #     print('\t\t' + definition)
 
-    outputs = parsed_data[word]
     for output in outputs:
         labels = output[0]
         output_def = output[1]
@@ -85,4 +97,3 @@ def display_results(parsed_data, word, word_norm, div, num_ground):
         print('\t\toutput: ' + output_def)
         print('\t\tlabels: ' + str(labels_for_print))
         print('\t\tscore: ' + str(sc))
-

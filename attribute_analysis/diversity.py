@@ -1,11 +1,12 @@
 from collections import defaultdict
 import numpy as np
-from itertools import combinations, product
-from sklearn.metrics.pairwise import cosine_similarity
+from itertools import combinations
+# from sklearn.metrics.pairwise import cosine_similarity
 import string, copy
 import gensim
 import heapq
-import ground
+from numpy import dot
+from numpy.linalg import norm
 model = gensim.models.KeyedVectors.load_word2vec_format('files/GoogleNews-vectors-negative300.bin', binary=True)
 
 function_words = ["a", "about", "above", "after", "after", "again", "against", "ago", "ahead", "all", "almost",
@@ -70,10 +71,14 @@ def get_diversity(word):
     for pair in combinations(def_emb, 2):
         emb1 = pair[0]
         emb2 = pair[1]
-        sim = cosine_similarity([emb1], Y=[emb2])[0][0]
+        sim = cosine_similarity(emb1, emb2)
         similarities.append(sim)
 
     return 1-np.mean(heapq.nsmallest(5, similarities))
+
+
+def cosine_similarity(a, b):
+    return dot(a, b) / (norm(a) * norm(b))
 
 
 def get_def_embedding(definition):
