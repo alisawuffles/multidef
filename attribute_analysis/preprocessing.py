@@ -1,5 +1,6 @@
 import word_freq, ground, partofspeech, diversity, word_emb, atom_weight, training
 import numpy as np
+from sklearn.preprocessing import OneHotEncoder
 classes = {'I': 1.0, 'II': 0.6, 'III': 0.3, 'IV': 0.0}
 c_perfect = set(['E'])
 c_fluency = set(['R', 'S', 'P'])
@@ -31,6 +32,7 @@ def get_data(parsed_data):
     groups = []
     good_groups = []
     scores = []
+    pos_data = []
 
     # for each word
     for word in parsed_data:
@@ -42,6 +44,7 @@ def get_data(parsed_data):
         for output in es:               # output = duple ([labels], output_def)
             labels = output[0]          # labels = [labels]
             output_def = output[1]
+            pos = partofspeech.get_pos(word, output_def)
             weight = atom_weight.get_atom_weight(word, output_def)
 
             E = 1 if 'E' in labels else 0
@@ -60,15 +63,23 @@ def get_data(parsed_data):
             groups.append(word)
             s = score(labels)
             scores.append([s])
+            pos_data.append([pos, s, E, W])
 
             if W == 0:
                 good_data.append([div, word_norm, weight, E, R, S, C, P, U, N, B, O, M])
                 good_groups.append(word)
 
+    pos_col = [row[0] for row in pos_data]
+    pos_col = np.ravel(pos_col).reshape(-1, 1)
+    enc = OneHotEncoder(handle_unknown='error', dtype=np.int32)
+    enc.fit(pos_col)
+    pos_transformed = enc.transform(pos_col).toarray()
+    pos_data = np.concatenate([pos_transformed, [row[1:] for row in pos_data]], axis=1)
+
     n = training.n
     s_data = np.concatenate(([row[:n] for row in W_data], scores), axis=1)
 
-    return W_data, s_data, groups, good_data, good_groups
+    return W_data, s_data, groups, good_data, good_groups, pos_data
 
 
 def score(labels):

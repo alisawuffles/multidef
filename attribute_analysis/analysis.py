@@ -1,43 +1,66 @@
-import atom_weight, preprocessing, training, word_emb, diversity, ground
+import atom_weight, preprocessing, training, word_emb, diversity, ground, partofspeech
 import numpy as np
 
 
-def pos_table(s_data):
-    pos_data = [row[-5:] for row in s_data]
-    format_string = "{:<30}{:<30}{:<30}"
-    print(format_string.format('POS', 'Count', 'Average Score'))
+def pos_table(pos_data):
+    format_string = "{:<10}{:<10}{:<30}{:<15}{:<30}"
+    print(format_string.format('POS', 'Count', 'Average Score', 'Count E', 'Count W'))
 
     a = []
     a_ct = 0
+    a_e_ct = 0
+    a_w_ct = 0
     n = []
     n_ct = 0
+    n_e_ct = 0
+    n_w_ct = 0
     r = []
     r_ct = 0
+    r_e_ct = 0
+    r_w_ct = 0
     v = []
     v_ct = 0
+    v_e_ct = 0
+    v_w_ct = 0
 
     for ex in pos_data:
-        if ex[0] == 1:
-            a.append(ex[4])
+        if ex[0] == 1:              # it's an adjective
+            a.append(ex[4])         # score
             a_ct += 1
-        elif ex[1] == 1:
+            if ex[5] == 1:          # label E
+                a_e_ct += 1
+            elif ex[6] == 1:        # label W
+                a_w_ct += 1
+        elif ex[1] == 1:            # it's a noun
             n.append(ex[4])
             n_ct += 1
-        elif ex[2] == 1:
+            if ex[5] == 1:
+                n_e_ct += 1
+            elif ex[6] == 1:
+                n_w_ct += 1
+        elif ex[2] == 1:            # it's an adverb
             r.append(ex[4])
             r_ct += 1
-        elif ex[3] == 1:
+            if ex[5] == 1:
+                r_e_ct += 1
+            elif ex[6] == 1:
+                r_w_ct += 1
+        elif ex[3] == 1:            # it's a verb
             v.append(ex[4])
             v_ct += 1
+            if ex[5] == 1:
+                v_e_ct += 1
+            elif ex[6] == 1:
+                v_w_ct += 1
 
     a_avg = np.mean(a)
     n_avg = np.mean(n)
     r_avg = np.mean(r)
     v_avg = np.mean(v)
-    print(format_string.format('a', a_ct, a_avg))
-    print(format_string.format('n', n_ct, n_avg))
-    print(format_string.format('r', r_ct, r_avg))
-    print(format_string.format('v', v_ct, v_avg))
+    print(format_string.format('a', a_ct, round(a_avg, 3), a_e_ct, a_w_ct))
+    print(format_string.format('n', n_ct, round(n_avg, 3), n_e_ct, n_w_ct))
+    print(format_string.format('r', r_ct, round(r_avg, 3), r_e_ct, r_w_ct))
+    print(format_string.format('v', v_ct, round(v_avg, 3), v_e_ct, v_w_ct))
 
 
 def show_examples(parsed_data):
@@ -82,6 +105,7 @@ def display_results(parsed_data, word, div, word_norm, num_ground):
         sc = preprocessing.score(labels)
 
         weight = atom_weight.get_atom_weight(word, output_def)
+        pos = partofspeech.get_pos(word, output_def)
         labels_for_print = []
 
         for label in labels:
@@ -94,6 +118,7 @@ def display_results(parsed_data, word, div, word_norm, num_ground):
             labels_for_print.append(label + ': ' + meaning)
 
         print('\n\t\tatom weight: ' + str(weight))
+        print('\n\t\tpart of speech: ' + pos)
         print('\t\toutput: ' + output_def)
         print('\t\tlabels: ' + str(labels_for_print))
         print('\t\tscore: ' + str(sc))

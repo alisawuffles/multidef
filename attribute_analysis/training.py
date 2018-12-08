@@ -9,6 +9,7 @@ good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
 label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close', 'wrong POS', 'under-defined',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
 attributes = ['def div', 'word norm', 'atom wgt']
+# attributes = ['def div']
 n = len(attributes)
 
 
@@ -64,7 +65,7 @@ def train(X, y, groups, weights=None):
     if weights is not None:
         weights = np.array(weights)
 
-    kfold = KFold(n_splits=5, shuffle=False)
+    kfold = KFold(n_splits=5, shuffle=True)
 
     bias = []
     coefficients = []
@@ -107,26 +108,32 @@ def train(X, y, groups, weights=None):
         f1.append(f1_score(y_test, clf.predict(X_test), sample_weight=weights_test))
 
         # baseline log loss
-        perc = sum(y_test) / len(y_test)
+        perc = sum(y_test) / len(y_test) if weights is None else np.average([a*b for a,b in zip(y_test, weights_test) if a[0] == 1])
         baseline_pred = [perc] * len(y_test)
         baseline_loss.append(log_loss(y_test, baseline_pred, sample_weight=weights_test))
 
         # zeroR accuracy
-        prediction = stats.mode(y_test)[0]
+        if weights is not None:
+            # prediction = stats.mode(y_train)[0]
+            pairs = zip(y_train, weights_train)
+            prediction = 1 if sum([1 for pair in pairs if pair[1] > 0.5 and pair[0][0] == 1]) > len(y_train)/2 else 0
+        else:
+            prediction = stats.mode(y_train)[0]
+
         zeroR_pred = [prediction] * len(y_test)
         baseline_acc.append(np.average([1 if x == y else 0 for x, y in zip(y_test, zeroR_pred)],
                                        weights=weights_test))
 
         # get p-values for the fitted model
         denom = (2.0 * (1.0 + np.cosh(clf.decision_function(X_train))))
-        F_ij = np.dot((X_train / denom[:, None]).T, X_train)  # Fisher Information Matrix
+        F_ij = np.dot((X_train / denom[:, None]).T, X_train)        # Fisher Information Matrix
         if np.linalg.det(F_ij) == 0:
             continue
-        Cramer_Rao = np.linalg.inv(F_ij)  # Inverse Information Matrix
+        Cramer_Rao = np.linalg.inv(F_ij)                            # Inverse Information Matrix
         sigma_estimates = np.array(
-            [np.sqrt(Cramer_Rao[i, i]) for i in range(Cramer_Rao.shape[0])])  # sigma for each coefficient
-        z_scores = clf.coef_[0] / sigma_estimates  # z-score for each model coefficient
-        p_values = [stats.norm.sf(abs(x)) * 2 for x in z_scores]  # two tailed test for p-values
+            [np.sqrt(Cramer_Rao[i, i]) for i in range(Cramer_Rao.shape[0])])    # sigma for each coefficient
+        z_scores = clf.coef_[0] / sigma_estimates                               # z-score for each model coefficient
+        p_values = [stats.norm.sf(abs(x)) * 2 for x in z_scores]                # two tailed test for p-values
         p.append(p_values)
 
     return bias, coefficients, loss, acc, precision, recall, f1, baseline_loss, baseline_acc, p
@@ -138,7 +145,7 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
     print('Label ' + label + ': ' + meaning)
     format_string = "{:<30}{:<30}{:<30}{:<30}"
     print(format_string.format('Attribute', 'Coefficient', 'p-value', 'p<0.1'))
-    print(format_string.format('bias', str(np.mean(bias)), '', ''))
+    print(format_string.format('bias', str(round(np.mean(bias), 3)), '', ''))
 
     for i in range(n):  # for every attribute
         attribute = attributes[i]
@@ -149,15 +156,15 @@ def display_results(label, meaning, bias, coefficients, loss, acc, precision,
         if p_value < 0.1:
             flag = 'X'
 
-        print(format_string.format(attribute, coefficient, p_value, flag))
+        print(format_string.format(attribute, round(coefficient, 5), round(p_value, 5), flag))
 
     print('---------------------------')
-    print('log loss: ' + str(round(np.mean(loss), 3)))
-    print('accuracy: ' + str(round(np.mean(acc), 3)))
-    print('precision: ' + str(round(np.mean(precision),3)))
-    print('recall: ' + str(round(np.mean(recall), 3)))
-    print('f1 score: ' + str(round(np.mean(f1), 3)))
+    print('log loss: ' + str(round(np.mean(loss), 5)))
+    print('accuracy: ' + str(round(np.mean(acc), 5)))
+    print('precision: ' + str(round(np.mean(precision), 5)))
+    print('recall: ' + str(round(np.mean(recall), 5)))
+    print('f1 score: ' + str(round(np.mean(f1), 5)))
 
-    print('baseline log loss: ' + str(round(np.mean(baseline_loss), 3)))
-    print('zeroR accuracy: ' + str(round(np.mean(baseline_acc), 3)))
+    print('baseline log loss: ' + str(round(np.mean(baseline_loss), 5)))
+    print('zeroR accuracy: ' + str(round(np.mean(baseline_acc), 5)))
 
