@@ -15,8 +15,8 @@ def main():
     #
     #     training.train_s(s_data, groups)
 
-    # analysis.pos_table(pos_data)
-    analysis.show_examples(gspr)
+    analysis.pos_table(pos_data)
+    # analysis.show_examples(gspr)
 
 
 if __name__ == "__main__":

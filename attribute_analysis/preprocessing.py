@@ -46,6 +46,7 @@ def get_data(parsed_data):
             output_def = output[1]
             pos = partofspeech.get_pos(word, output_def)
             weight = atom_weight.get_atom_weight(word, output_def)
+            length = len(output_def.split(' '))
 
             E = 1 if 'E' in labels else 0
             R = 1 if 'R' in labels else 0
@@ -63,7 +64,7 @@ def get_data(parsed_data):
             groups.append(word)
             s = score(labels)
             scores.append([s])
-            pos_data.append([pos, s, E, W])
+            pos_data.append([pos, length, s, W, E, R, S, C, P, U, N, B, O, M])
 
             if W == 0:
                 good_data.append([div, word_norm, weight, E, R, S, C, P, U, N, B, O, M])
