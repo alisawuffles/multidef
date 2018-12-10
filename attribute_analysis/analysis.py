@@ -43,25 +43,21 @@ def pos_table(pos_data):
     print(format_string.format('v', v_ct, round(np.mean(v), 3), round(np.mean(v_len), 3)))
 
 
-def atoms(parsed_data):
-    # weights = []
+def atoms(s_data):
+    weights = []
     scores = []
-    for word in parsed_data.keys():
-        outputs = parsed_data[word]
-        for output in outputs:
-            labels = output[0]
-            output_def = output[1]
-            sc = preprocessing.score(labels)
+    big_atom_scores = []
+    for ex in s_data:
+        weight = ex[0]
+        sc = ex[1]
+        weights.append(weight)
+        scores.append(sc)
+        if weight > 1.48:
+            big_atom_scores.append(sc)
 
-            weight = atom_weight.get_atom_weight(word, output_def)
-            # weights.append(weight)
-            if weight > 1.6409999999999991:
-                scores.append(sc)
-
-    # print(np.percentile(weights,95))
+    print(np.percentile(weights, 90))
     print(np.mean(scores))
-
-
+    print(np.mean(big_atom_scores))
 
 
 def show_examples(parsed_data):

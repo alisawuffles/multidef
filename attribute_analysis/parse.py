@@ -17,7 +17,6 @@ def parse():
     b1, gs1, gsp1, gspr1 = partition_ev(ev_ruimin, code)
     b2, gs2, gsp2, gspr2 = partition_ev(ev_downey, code)
     b3, gs3, gsp3, gspr3 = partition_ev(ev_nor, code)
-    print(gspr1)
 
     b = union_labels(b1, b2, b3)
     gs = union_labels(gs1, gs2, gs3)
