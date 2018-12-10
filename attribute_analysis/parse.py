@@ -1,4 +1,6 @@
 from collections import defaultdict
+import preprocessing
+import numpy as np
 
 
 def parse():
@@ -15,6 +17,7 @@ def parse():
     b1, gs1, gsp1, gspr1 = partition_ev(ev_ruimin, code)
     b2, gs2, gsp2, gspr2 = partition_ev(ev_downey, code)
     b3, gs3, gsp3, gspr3 = partition_ev(ev_nor, code)
+    print(gspr1)
 
     b = union_labels(b1, b2, b3)
     gs = union_labels(gs1, gs2, gs3)
@@ -93,7 +96,7 @@ def partition_ev(ev, code):
     :return: ev partitioned into four dictionaries by model
     '''
 
-    b = defaultdict(list)  # dictionary of word : list of tuples ([labels],[group number])
+    b = defaultdict(list)  # dictionary of word : list of tuples ([labels], definition)
     gs = defaultdict(list)  # for b, list has only one tuple
     gsp = defaultdict(list)
     gspr = defaultdict(list)
@@ -125,13 +128,15 @@ def union_labels(data1, data2, data3):
     data = defaultdict(list)
     for word in data1:                                  # for all words
         for i in range(0, len(data1[word])):            # for all definitions
+            scores = []
             labels = data1[word][i][0]                  # labels = annotator 1's labels for the i-th definition
-            labels.extend(data2[word][i][0])            # add annotator 2's labels
-            labels.extend(data3[word][i][0])            # add annotator 3's labels
-            labels = list(set(labels))                  # remove duplicates
+            scores.append(preprocessing.score(labels))
+            labels = data2[word][i][0]
+            scores.append(preprocessing.score(labels))
+            labels = data3[word][i][0]
+            scores.append(preprocessing.score(labels))
+            score = np.mean(scores)
 
-            if len(labels) != 1 and 'W' in labels:      # if labels contain W and other labels, discard W
-                labels.remove('W')
-            data[word].append((labels, data1[word][i][1]))
+            data[word].append((score, data1[word][i][1]))
 
     return data

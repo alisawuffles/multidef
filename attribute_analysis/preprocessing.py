@@ -27,48 +27,28 @@ def get_data(parsed_data):
     partofspeech.read_pos(parsed_data)
 
     # initialize data lists
-    W_data = []
-    good_data = []
+    s_data = []
     groups = []
-    good_groups = []
-    scores = []
     pos_data = []
 
     # for each word
     for word in parsed_data:
-        es = parsed_data[word]                 # es = list of duple ([labels], definition)
+        es = parsed_data[word]                          # es = list of duple ([labels], definition)
         div = diversity.get_diversity(word)
         word_norm = word_emb.get_word_norm(word)
 
         # for each output definition
-        for output in es:               # output = duple ([labels], output_def)
-            labels = output[0]          # labels = [labels]
+        for output in es:                               # output = duple ([labels], output_def)
+            s = output[0]                               # labels = [labels]
             output_def = output[1]
             pos = partofspeech.get_pos(word, output_def)
             weight = atom_weight.get_atom_weight(word, output_def)
             length = len(output_def.split(' '))
 
-            E = 1 if 'E' in labels else 0
-            R = 1 if 'R' in labels else 0
-            S = 1 if 'S' in labels else 0
-            C = 1 if 'C' in labels else 0
-            P = 1 if 'P' in labels else 0
-            U = 1 if 'U' in labels else 0
-            N = 1 if 'N' in labels else 0
-            B = 1 if 'B' in labels else 0
-            O = 1 if 'O' in labels else 0
-            M = 1 if 'M' in labels else 0
-            W = 1 if 'W' in labels else 0
-
-            W_data.append([div, word_norm, weight, W])
+            s_data.append([weight, s])
             groups.append(word)
-            s = score(labels)
-            scores.append([s])
-            pos_data.append([pos, length, s, W, E, R, S, C, P, U, N, B, O, M])
 
-            if W == 0:
-                good_data.append([div, word_norm, weight, E, R, S, C, P, U, N, B, O, M])
-                good_groups.append(word)
+            pos_data.append([pos, length, s])
 
     pos_col = [row[0] for row in pos_data]
     pos_col = np.ravel(pos_col).reshape(-1, 1)
@@ -77,10 +57,7 @@ def get_data(parsed_data):
     pos_transformed = enc.transform(pos_col).toarray()
     pos_data = np.concatenate([pos_transformed, [row[1:] for row in pos_data]], axis=1)
 
-    n = training.n
-    s_data = np.concatenate(([row[:n] for row in W_data], scores), axis=1)
-
-    return W_data, s_data, groups, good_data, good_groups, pos_data
+    return s_data, groups, pos_data
 
 
 def score(labels):

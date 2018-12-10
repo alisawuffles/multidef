@@ -8,8 +8,8 @@ from scipy import stats
 good_labels = ['E', 'R', 'S', 'C', 'P', 'U', 'N', 'B', 'O', 'M']
 label_meanings = ['exact', 'redundancy', 'self-reference', 'semantically close', 'wrong POS', 'under-defined',
                         'over-defined', 'partially wrong', 'opposite', 'mixture of two or more meanings']
-attributes = ['def div', 'word norm', 'atom wgt']
-# attributes = ['def div']
+# attributes = ['def div', 'word norm', 'atom wgt']
+attributes = ['atom wgt']
 n = len(attributes)
 
 
