@@ -15,7 +15,8 @@ def main():
     #
     #     training.train_s(s_data, groups)
 
-    analysis.pos_table(pos_data)
+    analysis.atoms(gspr)
+    # analysis.pos_table(pos_data)
     # analysis.show_examples(gspr)
 
 

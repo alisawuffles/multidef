@@ -108,15 +108,16 @@ def train(X, y, groups, weights=None):
         f1.append(f1_score(y_test, clf.predict(X_test), sample_weight=weights_test))
 
         # baseline log loss
-        perc = sum(y_test) / len(y_test) if weights is None else np.average([a*b for a,b in zip(y_test, weights_test) if a[0] == 1])
+        # perc = sum(y_test) / len(y_test) if weights is None else np.average([a*b for a,b in zip(y_test, weights_test) if a[0] == 1])
+        perc = sum(y_test) / len(y_test)
         baseline_pred = [perc] * len(y_test)
         baseline_loss.append(log_loss(y_test, baseline_pred, sample_weight=weights_test))
 
         # zeroR accuracy
         if weights is not None:
-            # prediction = stats.mode(y_train)[0]
-            pairs = zip(y_train, weights_train)
-            prediction = 1 if sum([1 for pair in pairs if pair[1] > 0.5 and pair[0][0] == 1]) > len(y_train)/2 else 0
+            prediction = stats.mode(y_train)[0]
+            # pairs = zip(y_train, weights_train)
+            # prediction = 1 if sum([1 for pair in pairs if pair[1] > 0.5 and pair[0][0] == 1]) > len(y_train)/2 else 0
         else:
             prediction = stats.mode(y_train)[0]
 

@@ -69,6 +69,27 @@ def pos_table(pos_data):
                                v_label_ct[8], v_label_ct[9], v_label_ct[10]))
 
 
+def atoms(parsed_data):
+    # weights = []
+    scores = []
+    for word in parsed_data.keys():
+        outputs = parsed_data[word]
+        for output in outputs:
+            labels = output[0]
+            output_def = output[1]
+            sc = preprocessing.score(labels)
+
+            weight = atom_weight.get_atom_weight(word, output_def)
+            # weights.append(weight)
+            if weight > 1.6409999999999991:
+                scores.append(sc)
+
+    # print(np.percentile(weights,95))
+    print(np.mean(scores))
+
+
+
+
 def show_examples(parsed_data):
     # random_words = random.sample(parsed_data.keys(), 10)
 
