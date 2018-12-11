@@ -1,4 +1,4 @@
-# multidef
+# 349/399 Project
 
 In order to better understand the settings under which the W2MDEF-GS model succeeds and fails, we investigated whether certain attributes of words and atoms are predictive of model performance. The word attributes we considered included the ranking of word frequency, the number of ground-truth definitions of the word, the semantic diversity of ground-truth definitions, and the word embedding norm.  Atom attributes included the atom weight after decomposition and the part of speech of the atom. We used logistic regression with these attributes to predict two different output variables: individual error types and the 0-1 score. For predicting the score, we trained logistic regression to minimize the cross-entropy between the model output and the score (i.e., we treated the non-0/1 score labels as probabilities). We performed 5-fold validation, where atoms belonging to the same word must always be in the same fold. 
 
